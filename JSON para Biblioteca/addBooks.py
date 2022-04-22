@@ -23,7 +23,8 @@ try:
         Gpo_lang=input("Ingresa grupo de lenguas\n")
         year=input("Ingresa año\n")
         source=input("Ingresa URL\n")
-        extra=input("Ingresa texto extra\n")
+        extra_es=input("Ingresa texto extra español\n")
+        extra_en=input("Ingresa texto extra ingles\n")
         terminal_lang_es=makeLangObject(input("Ingresa las lenguas terminales en español separadas por comas\n"))#arr
         terminal_lang_en=makeLangObject(input("Ingresa las lenguas terminales en ingles separadas por comas\n"))
         keywords_es=formatterArray(input("Ingresa las keywords en español separadas por comas\n"))#arr
@@ -36,7 +37,8 @@ try:
             "Gpo_lang":Gpo_lang,
             "year": year,
             "source":source,
-            "extra": extra,
+            "extra_es": extra_es,
+            "extra_en": extra_en,
             "terminal_lang_es":terminal_lang_es ,
             "terminal_lang_en": terminal_lang_en,
             "keywords_es":keywords_es,
