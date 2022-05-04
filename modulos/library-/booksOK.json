@@ -78,7 +78,7 @@
     "extra_en": "Kim, Yuni, and Natalia Hernández. 2021. El estatus fonológico de ND y NT en el amuzgo de San Pedro Amuzgos. <i>Cuadernos de Lingüística de El Colegio de México</i> 8, e227. doi: 10.24201/clecm. v8i0.e227. 37 pp.",
     "terminal_lang_es": [{ "name": "Amuzgo de San Pedro Amuzgos" }],
     "terminal_lang_en": [{ "name": "San Pedro Amuzgos Amuzgo" }],
-    "keywords_es": ["Amuzgo", "Fonología", "Alófonía"],
+    "keywords_es": ["Amuzgo", "Fonología", "Alofonía"],
     "keywords_en": ["Amuzgo", "Phonology", "Allophones"]
   },
   {
@@ -152,7 +152,7 @@
     "keywords_en": ["Mixtec", "Automatic speech recognition"]
   },
   {
-    "title": "Leveraging end-to-end ASR for endangered language documentation: An empirical study on Yoloxóchitl mixtec",
+    "title": "Leveraging end-to-end ASR for endangered language documentation: An empirical study on Yoloxóchitl Mixtec",
     "authors": [
       "Jiatong Shi",
       "Jonathan D. Amith",
@@ -336,8 +336,8 @@
     "extra_en": "DiCanio, Christian T. 2014. Cue weight in the perception of Trique glottal consonants. <i>Journal of the Acoustical Society of America</i> 135:884–95.",
     "terminal_lang_es": [{ "name": "Triqui de San Martín Itunyoso" }],
     "terminal_lang_en": [{ "name": "San Martín Itunyoso Triqui" }],
-    "keywords_es": ["Triqui", "Percepción", "Consonantes", "Peso fonológico"],
-    "keywords_en": ["Triqui", "Perception", "Consonants", "Phonological weight"]
+    "keywords_es": ["Triqui", "Fonética", "Consonantes", "Oclusivas glotales"],
+    "keywords_en": ["Triqui", "Phonetics", "Consonants", "Glottal stops"]
   },
   {
     "title": "El aspecto verbal de triqui de Itunyoso",
@@ -424,20 +424,5 @@
     "terminal_lang_en": [{ "name": "San Martín Itunyoso Triqui" }],
     "keywords_es": ["Morfología de persona", "Tono", "Triqui"],
     "keywords_en": ["Person morphology", "Tone", "Triqui"]
-  },
-  {
-    "title": "Cue weight in the perception of Trique glottal consonants",
-    "authors": ["Christian T. DiCanio"],
-    "community": "San Martín Itunyoso",
-    "gtolog": "triq1251",
-    "Gpo_lang": "Triqui",
-    "year": "2014",
-    "source": "https://mesolex.nyc3.digitaloceanspaces.com/library/Itunyoso/DiCanio_2014_Cue-weight_JASA.pdf",
-    "extra_en": "DiCanio, Christian T. 2014. Cue weight in the perception of Trique glottal consonants. <i>Journal of the Acoustical Society of America</i> 135:884–95.",
-    "extra_es": "DiCanio, Christian T. 2014. Cue weight in the perception of Trique glottal consonants. <i>Journal of the Acoustical Society of America</i>, 135:884–95.",
-    "terminal_lang_es": [{ "name": "Triqui de San Martín Itunyoso" }],
-    "terminal_lang_en": [{ "name": "San Martín Itunyoso Triqui" }],
-    "keywords_es": ["Triqui", "Fonética", "Consonantes", "Oclusiva glotal"],
-    "keywords_en": ["Triqui", "Phonetics", "Consonants", "Glottal stop"]
   }
 ]
