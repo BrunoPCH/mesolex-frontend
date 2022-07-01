@@ -22,6 +22,7 @@
   --interface3: #afc3c1;
   --interface4: #d3ebe9;
   --interface5: #def7f5;
+  --interface6: #f0f8f7;
 
   --interfacesp: #009d92;
 
@@ -729,12 +730,12 @@ button.btn-pagina-activa:focus {
   outline: none !important;
   /*ver la posibilidad de deshabilitar el tabindex al estar activo*/
 }
-button.btn-pagina-siguiente {
+/* button.btn-pagina-siguiente {
 }
 .contenedor-ir-a-pagina {
 }
 form.formulario-ir-a-pagina {
-}
+} */
 .caja-input-ir-a-pagina {
   height: 1.5rem;
   border: 1px solid var(--gris3);
@@ -756,8 +757,8 @@ button.btn-ir-a-pagina {
 button.btn-ir-a-pagina:hover {
   border: 2px solid var(--interface0);
 }
-.icono-ir-a-pagina {
-}
+/* .icono-ir-a-pagina {
+} */
 
 /*PARA GLOTOCODE*/
 code {
@@ -1099,4 +1100,76 @@ p.footer-item {
   color: var(--gris3);
   font-size: 0.8888rem;
   font-weight: 400 !important;
+}
+/* ALERTA */
+.contenedor-alerta-animada {
+  overflow: hidden;
+  transform-origin: top;
+  animation: desdoble_contenedor_alerta 1.3s linear;
+}
+.contenedor-alerta {
+  max-width: 1020px;
+  overflow: hidden;
+  margin: 0rem auto;
+  padding: 1rem;
+  background-color: var(--interface6);
+
+  border-bottom: 6px solid var(--interface0);
+
+  display: flex;
+  flex-flow: row nowrap;
+  position: relative;
+  transform-origin: top;
+
+  animation: aparicion_alerta 1s ease-in-out 0.5s;
+}
+/* boton X cerrar pantalla emergente */
+.boton-cerrar-alerta {
+  padding: 0;
+  min-width: 15px;
+  color: var(--interface2);
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  line-height: 1rem;
+  font-weight: 300;
+  cursor: pointer;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+.boton-cerrar-alerta:hover {
+  color: var(--interface0) !important;
+  font-weight: 500;
+  background: none;
+}
+.texto-alerta {
+  margin-bottom: 0.15rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--interface0);
+}
+/* ANIMACION ALERTA */
+@keyframes desdoble_contenedor_alerta {
+  from {
+    transform: scaleY(0);
+    max-height: 0;
+    display: block;
+  }
+  to {
+    transform: scaleY(1);
+    display: block;
+  }
+}
+@keyframes aparicion_alerta {
+  from {
+    transform: translateY(-400%);
+    opacity: 0;
+    display: none;
+  }
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+    display: block;
+  }
 }
