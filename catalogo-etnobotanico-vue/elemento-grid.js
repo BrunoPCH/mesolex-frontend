@@ -1,4 +1,8 @@
 /* global Vue, axios*/
+
+// importando los assets
+import especies from './especies.json' assert {type: 'json'}
+
 // 1.Crear el componente
 let libroEspecieCardComponent = {
   // 1.1 Especificar nombre de la plantilla
@@ -19,13 +23,12 @@ let libroEspecieCardComponent = {
   },
   // 4 Se crea HOOK
   created() {
-    //
+    // Se extrae el nombre de la propiedad
     let nombre = this.especie;
-    // 4.2 haciendo fetch de los datos con axios
-    axios.get(`especies.json`).then((resp) => {
-      //Asignando datos de respuesta al componente
-      this.especie = resp.data;
-    });
+    // Se busca la informacion de al especie en el arreglo
+    // de especies con Array.prototype.find()
+    let especieEncontrada = especies.find( especie => especie.nombre_cientifico === nombre);
+    this.especie = especieEncontrada
   },
 };
 // 2 Registrar componente en instancia de vue
