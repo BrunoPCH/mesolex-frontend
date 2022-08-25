@@ -50,7 +50,7 @@
                 <div class="indice-grid">
 
                     <libro-especie-card especie="Pseudobombax Ellipticum"></libro-especie-card>
-                    <libro-especie-card especie="Otra"></libro-especie-card>
+                    <libro-especie-card especie="Otra rockanrola"></libro-especie-card>
 
 
 
@@ -87,7 +87,7 @@
     <script type="text/x-template" id="libro-especie-card-template">
         <div class="indice__tarjeta">
             <div class="indice__tarjeta__header">
-                <a href="" class="indice__tarjeta__header__liga">
+                <a :href="especie.pagina_url" class="indice__tarjeta__header__liga">
                     <img class="indice__tarjeta__header__liga__img"
                         :src="especie.miniatura_img_url" alt="Imagen 1 a 1">
                     <h3 class="indice__tarjeta__header__liga__titulo">{{especie.nombre_cientifico}}</h3>
