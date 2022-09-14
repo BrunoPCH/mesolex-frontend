@@ -424,5 +424,26 @@
     "terminal_lang_en": [{ "name": "San Martín Itunyoso Triqui" }],
     "keywords_es": ["Morfología de persona", "Tono", "Triqui"],
     "keywords_en": ["Person morphology", "Tone", "Triqui"]
+  },
+  {
+    "title": "Guía etnobotánica ilustrada de la flora del municipio totonaco de Zongozotla, Puebla, y otros municipios circunvecinos",
+    "authors": [
+      "López Francisco Osbel",
+      "Jonathan D. Amith",
+      "Sebastián López Cano",
+      "Isac Pérez Núñez",
+      "Kenia Velasco Gutiérrez"
+    ],
+    "community": "Zongozotla",
+    "gtolog": "high1243",
+    "Gpo_lang": "Totonacano",
+    "year": "2022",
+    "source": "https://mesolex.nyc3.digitaloceanspaces.com/library/Totonaco/Zongoztla-Illustrated-Guide_2022-02-07.pdf",
+    "extra_es": "López Francisco, Osbel, Jonathan D. Amith, Sebastián López Cano, Isac Pérez Núñez y Kenia Velasco Gutiérrez. 2022. Guía etnobotánica ilustrada de la flora del municipio totonaco de Zongozotla, Puebla, y otros municipios circunvecinos. Ms. 762 pp.",
+    "extra_en": "López Francisco, Osbel, Jonathan D. Amith, Sebastián López Cano, Isac Pérez Núñez and Kenia Velasco Gutiérrez. 2022. Guía etnobotánica ilustrada de la flora del municipio totonaco de Zongozotla, Puebla, y otros municipios circunvecinos. Ms. 762 pp.",
+    "terminal_lang_es": [{ "name": "Totonaco de la Sierra Norte de Puebla" }],
+    "terminal_lang_en": [{ "name": "Highland Totonac" }],
+    "keywords_es": ["Totonaco", "Etnobotánica", "Etnobiología"],
+    "keywords_en": ["Totonac", "Ethnobotany", "Ethnobiology"]
   }
 ]

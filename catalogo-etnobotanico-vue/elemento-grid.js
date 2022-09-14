@@ -1,7 +1,7 @@
 /* global Vue, axios*/
 
 // importando los assets
-import especies from './especies.json' assert {type: 'json'}
+import especies from "./especies.json" assert { type: "json" };
 
 // 1.Crear el componente
 let libroEspecieCardComponent = {
@@ -27,8 +27,10 @@ let libroEspecieCardComponent = {
     let nombre = this.especie;
     // Se busca la informacion de al especie en el arreglo
     // de especies con Array.prototype.find()
-    let especieEncontrada = especies.find( especie => especie.nombre_cientifico === nombre);
-    this.especie = especieEncontrada
+    let especieEncontrada = especies.find(
+      (especie) => especie.nombre_cientifico === nombre
+    );
+    this.especie = especieEncontrada;
   },
 };
 // 2 Registrar componente en instancia de vue
