@@ -49,8 +49,11 @@
             <section class="main__contenedor_general__main " id="vue-grid-list">
                 <div class="indice-grid">
 
-                    <libro-especie-card especie="Pseudobombax Ellipticum"></libro-especie-card>
-                    <libro-especie-card especie="Otra rockanrola"></libro-especie-card>
+                    <libro-especie-card especie="Sambucus nigra"></libro-especie-card>
+                    <libro-especie-card especie="rockanrola 3"></libro-especie-card>
+                    <libro-especie-card especie="Jonathan 455"></libro-especie-card>
+                    <libro-especie-card especie="Rosa llamasisa"></libro-especie-card>
+                    <libro-especie-card especie=""></libro-especie-card>
 
 
 
@@ -75,6 +78,7 @@
                 molestias
                 voluptate. Officia. Esto es una prueba en git </p>
         </div>
+
     </main>
     <footer class="">
 
@@ -90,7 +94,10 @@
                 <a :href="especie.pagina_url" class="indice__tarjeta__header__liga">
                     <img class="indice__tarjeta__header__liga__img"
                         :src="especie.miniatura_img_url" alt="Imagen 1 a 1">
-                    <h3 class="indice__tarjeta__header__liga__titulo">{{especie.nombre_cientifico}}</h3>
+                    <div class=indice__tarjeta__header__data-container>
+                        <h3 class="indice__tarjeta__header__liga__titulo"><i>{{especie.nombre_cientifico}}</i> {{especie.indicador_subespecie}} <i>{{especie.subespecie}}</i>  {{especie.autor}}</h3>
+                        <h4 class="indice__tarjeta__header__liga__familia">{{especie.familia}}</h4>
+                    </div>                 
                 </a>
             </div>
             <div class="indice__tarjeta__body">
@@ -100,13 +107,13 @@
                 <span>{{especie.texto_mixteco}}</span>
                 <span>{{especie.texto_mixteco_ing}}</span>
                 <span>{{especie.texto_mixteco_esp}}</span>
-
+                
             </div>
-            <audio controls>
+            <!-- <audio controls>
 
                 <source :src="especie.audio_mixteco_url" type="audio/mpeg">
                 
-            </audio>
+            </audio> -->
 
         </div>
     </script>

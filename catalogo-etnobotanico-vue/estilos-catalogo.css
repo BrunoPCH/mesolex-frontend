@@ -409,7 +409,9 @@ p.smallest {
   margin-top: 0;
   margin-bottom: 0.6666rem;
 }
-
+i {
+  font-style: italic;
+}
 ol {
   font-family: "Fira Sans", sans-serif;
 }
@@ -575,8 +577,8 @@ h6 {
 }
 .indice__tarjeta {
   border: 1px solid var(--gris3);
-  flex-basis: calc(25% - 2px);
-  margin: 0;
+  flex-basis: calc(25% - 4px);
+  margin: 0 !important;
   background-color: #fff;
 }
 .indice__tarjeta__header {
@@ -598,7 +600,7 @@ h6 {
   font-size: 0;
   text-decoration: none;
   color: #fff;
-  text-shadow: 3px 2px 3px rgba(0, 0, 0, 0.75);
+  text-shadow: 3px 2px 3px rgba(0, 0, 0, 0.90);
 }
 .indice__tarjeta__header__liga:visited {
   color: #fff;
@@ -613,29 +615,65 @@ h6 {
   padding: 0;
   line-height: 0;
   display: block;
-  opacity: 0.66;
-  filter: blur(3px);
-  -webkit-filter: blur(3px);
+  opacity: 0.5;
+  /* filter: blur(0px);
+  -webkit-filter: blur(0px); */
+  transition: filter, opacity .3s ease-in;
 }
 .indice__tarjeta__header:hover .indice__tarjeta__header__liga__img {
-  opacity: 0.5;
+  opacity: 0.6;
   background-blend-mode: multiply;
-  filter: blur(0px);
-  -webkit-filter: blur(0px);
+  /* filter: blur(3px);
+  -webkit-filter: blur(3px); */
+  transition: filter, opacity .3s ease-in;
 }
 .indice__tarjeta__header:hover {
-  background-color: var(--interface0);
+  /* background-color: var(--gris1); */
+  transition: filter, opacity .3s ease-in;
+}
+.indice__tarjeta__header__data-container {
+  position: absolute;
+  top: 0 !important;
+  left: 0 !important;
+  bottom: 0 !important;
+  right: 0 !important;
+  padding: 1rem;
+  
+  display: flex;
+  flex-flow: row wrap;
+  
+  align-content: flex-end;
 }
 
 .indice__tarjeta__header__liga__titulo {
-  position: absolute;
-  bottom: 1rem;
-  left: 1rem;
-  margin: 0 !important;
+  /* position: absolute;
+  bottom: 4rem;
+  left: 1rem; */
+  width: 100%;
+  
   font-size: 1rem;
+  font-style: normal;
   line-height: normal;
   letter-spacing: 2px;
-  min-height: 2.2rem;
+  margin-bottom: .5rem !important;
+  /* min-height: 2.2rem; */
+  
+  
+}
+.indice__tarjeta__header__liga__familia {
+  /* position: absolute;
+  bottom: 1rem;
+  left: 1rem; */
+  width: 100%;
+  
+  margin: 0 0 0 0 !important;
+  font-size: .7rem;
+  line-height: normal;
+  letter-spacing: 2px;
+  font-weight: 600;
+  
+
+  
 }
 .indice__tarjeta__body__title {
   margin-left: 0.88rem;
