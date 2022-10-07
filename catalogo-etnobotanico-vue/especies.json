@@ -1,7 +1,7 @@
 [
   {
     "nombre_cientifico": "Sambucus nigra",
-    "indicador_subespecie": "subsp.",
+    "indicador_subespecie": "<i>subsp.</i>",
     "subespecie": "canadensis",
     "autor": "(L.) Bolli",
     "familia": "Adoxaceae",
@@ -31,7 +31,10 @@
   },
   {
     "nombre_cientifico": "rockanrola 3",
-    "familia": "Familia",
+    "indicador_subespecie": "",
+    "subespecie": "",
+    "autor": "",
+    "familia": "Adoxaceae",
     "miniatura_img_url": "imagenes-catalogo/1.jpg",
     "imagen_principal_url": "imagenes-catalogo/1.jpg",
     "pagina_url": "https://facebook.com",
@@ -58,7 +61,10 @@
   },
   {
     "nombre_cientifico": "Jonathan 455",
-    "familia": "Familia",
+    "indicador_subespecie": "subsp.",
+    "subespecie": "canadensis",
+    "autor": "(L.) Bolli",
+    "familia": "Adoxaceae",
     "miniatura_img_url": "imagenes-catalogo/2.jpg",
     "imagen_principal_url": "imagenes-catalogo/2.jpg",
     "pagina_url": "https://facebook.com",
@@ -85,7 +91,10 @@
   },
   {
     "nombre_cientifico": "Rosa llamasisa",
-    "familia": "Familia",
+    "indicador_subespecie": "subsp.",
+    "subespecie": "canadensis",
+    "autor": "(L.) Bolli",
+    "familia": "Adoxaceae",
     "miniatura_img_url": "imagenes-catalogo/3.jpg",
     "imagen_principal_url": "imagenes-catalogo/3.jpg",
     "pagina_url": "https://facebook.com",
