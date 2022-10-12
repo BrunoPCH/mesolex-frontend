@@ -621,7 +621,7 @@ h6 {
   transition: filter, opacity .3s ease-in;
 }
 .indice__tarjeta__header:hover .indice__tarjeta__header__liga__img {
-  opacity: 0.6;
+  opacity: 0.8;
   background-blend-mode: multiply;
   /* filter: blur(3px);
   -webkit-filter: blur(3px); */
