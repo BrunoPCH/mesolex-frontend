@@ -48,12 +48,13 @@
             </section>
             <section class="main__contenedor_general__main " id="vue-grid-list">
                 <div class="indice-grid">
+                    <libro-especie-card v-for="especie in especies" :especie="especie"></libro-especie-card>
 
-                    <libro-especie-card especie="Sambucus nigra"></libro-especie-card>
-                    <libro-especie-card especie="rockanrola 3"></libro-especie-card>
-                    <libro-especie-card especie="Jonathan 455"></libro-especie-card>
-                    <libro-especie-card especie="Rosa llamasisa"></libro-especie-card>
-                    <libro-especie-card especie=""></libro-especie-card>
+                    <!-- <libro-especie-card especie="Sambucus nigra"></libro-especie-card>
+                    <libro-especie-card especie="Amaranthus hybridus"></libro-especie-card>
+                    <libro-especie-card especie="Amaranthus spinosus"></libro-especie-card>
+                    <libro-especie-card especie="Spondias purpurea"></libro-especie-card>
+                    <libro-especie-card especie="Plumeria rubra"></libro-especie-card> -->
 
 
 
@@ -103,10 +104,10 @@
             <div class="indice__tarjeta__body">
             </div>
             <div class="indice__tarjeta__footer">
-                <span>{{especie.nombre_mixteco}}</span>
+                <!-- <span>{{especie.nombre_mixteco}}</span>
                 <span>{{especie.texto_mixteco}}</span>
                 <span>{{especie.texto_mixteco_ing}}</span>
-                <span>{{especie.texto_mixteco_esp}}</span>
+                <span>{{especie.texto_mixteco_esp}}</span> -->
                 
             </div>
             <!-- <audio controls>
