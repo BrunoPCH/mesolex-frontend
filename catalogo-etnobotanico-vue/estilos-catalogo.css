@@ -181,7 +181,7 @@ body {
 }
 /*================================MAIN================================-*/
 
-header {
+.header_home {
   width: 100%;
   background-color: var(--interface1);
   flex-grow: 3;
