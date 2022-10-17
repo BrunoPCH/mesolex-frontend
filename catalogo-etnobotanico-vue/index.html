@@ -46,18 +46,22 @@
                             grid_view
                         </span>
                     </button>
+                    <!-- Para intercambiar vistas necesito intercambiar las siguientes clases:
+                    •indice-grid >>>> indice-list
+                    •indice tarjeta >>>> indice__tarjeta-vista-lista
+                    •indice-tarjeta__header >>>> indice__tarjeta__header-vista-lista
+                    •indice__tarjeta__header__liga >>>> indice__tarjeta__header__liga-vista-lista
+                    •indice__tarjeta__header__liga__img >>> oculto
+                    •indice__tarjeta__header__liga__titulo >>>> indice__tarjeta__header__liga__titulo-vista-lista
+
+                    -->
                 </div>
             </section>
             <section class="main__contenedor_general__main " id="vue-grid-list">
                 <div class="indice-grid">
                     <libro-especie-card v-for="especie in especies" :especie="especie"></libro-especie-card>
 
-                    <!-- <libro-especie-card especie="Sambucus nigra"></libro-especie-card>
-                    <libro-especie-card especie="Amaranthus hybridus"></libro-especie-card>
-                    <libro-especie-card especie="Amaranthus spinosus"></libro-especie-card>
-                    <libro-especie-card especie="Spondias purpurea"></libro-especie-card>
-                    <libro-especie-card especie="Plumeria rubra"></libro-especie-card> -->
-                    <!-- Prueba de github -->
+
 
 
 
