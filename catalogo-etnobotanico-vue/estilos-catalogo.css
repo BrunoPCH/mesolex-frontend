@@ -410,7 +410,7 @@ p.smallest {
   margin-bottom: 0.6666rem;
 }
 i {
-  font-style: italic;
+  font-style: italic !important;
 }
 ol {
   font-family: "Fira Sans", sans-serif;
@@ -581,6 +581,8 @@ h6 {
   margin: 0 !important;
   background-color: #fff;
 }
+
+
 .indice__tarjeta__header {
   background-color: var(--negro);
   background-blend-mode: multiply;
@@ -615,13 +617,13 @@ h6 {
   padding: 0;
   line-height: 0;
   display: block;
-  opacity: 0.5;
+  opacity: 0.45;
   /* filter: blur(0px);
   -webkit-filter: blur(0px); */
   transition: filter, opacity .3s ease-in;
 }
 .indice__tarjeta__header:hover .indice__tarjeta__header__liga__img {
-  opacity: 0.8;
+  opacity: 0.85;
   background-blend-mode: multiply;
   /* filter: blur(3px);
   -webkit-filter: blur(3px); */
@@ -631,6 +633,8 @@ h6 {
   /* background-color: var(--gris1); */
   transition: filter, opacity .3s ease-in;
 }
+
+
 .indice__tarjeta__header__data-container {
   position: absolute;
   top: 0 !important;
@@ -746,11 +750,13 @@ h6 {
   :root {
     font-size: 18px;
   }
+  
 }
 @media only screen and (min-width: 768px) and (max-width: 990px) {
   :root {
     font-size: 18px;
   }
+  
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   :root {
@@ -759,6 +765,8 @@ h6 {
   .indice__item {
     width: 50%;
   }
+  
+  
 }
 @media only screen and (max-width: 575px) {
   :root {
@@ -829,5 +837,9 @@ h6 {
   .icono__tipo_visualizacion {
     font-size: 40px !important;
     line-height: 100%;
+  }
+  .indice__tarjeta {
+    flex-basis: 100%;
+    
   }
 }
