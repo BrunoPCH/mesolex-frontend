@@ -23,13 +23,166 @@
     <link
         href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
         rel="stylesheet" />
-    <title>{{especie}} | {{numero de página}}</title>
+    <!--Especie de la página interior-->
+    <title>{{especie.nombre_cientifico}} | {{numero de página}}</title>
 </head>
 
-<body>
-    <header></header>
-    <main></main>
-    <footer></footer>
+<body id="contenedor-vue">
+    <div class="contenedor-general e1">
+        <header>
+            <section class="">
+                <nav class="menu-lengua-terminal ">
+                    <button class="lengua-terminal-item activo" name="mixteco" value="mixteco"
+                        type="button">Mixteco</button>
+                    <button class="lengua-terminal-item" name="Náhuatl" value="Náhuatl" type="button">Náhuatl</button>
+                    <button class="lengua-terminal-item" name="Totonaco" value="Totonaco"
+                        type="button">Totonaco</button>
+                    <button class="lengua-terminal-item" name="Triqui" value="Triqui" type="button">Triqui</button>
+                    <button class="lengua-terminal-item" name="Comentario" value="Comentario"
+                        type="button">Comentario</button>
+                    <button class="lengua-terminal-item boton-iconos-lengua-terminal-item" name="Play" value="Play"
+                        type="button"><span class="
+                            material-icons-sharp iconos-lengua-terminal-item">play_arrow</span></button>
+                    <button class="lengua-terminal-item boton-iconos-lengua-terminal-item" name="Rewind" value="Rewind"
+                        type="button"><span
+                            class="material-icons-sharp iconos-lengua-terminal-item">replay</span></button>
+                    <!-- <span class="material-icons-sharp" id="icono-indicador-reproduccion">volume_up</span> -->
+                </nav>
+            </section>
+        </header>
+        <main class="contendor-textos ">
+            <section class="main-columna-izquierda e2">
+                <h1 class="nombre-especie-lengua-terminal">{{especie. nombre_ mixteco}}</h1>
+                <h2 class="nombre-cientifico"><i>{{especie. nombre_cientifico}}</i>
+                    {{especie. indicador_subespecie}} <i>{{especie.subespecie}}</i> {{especie.autor}}</h2>
+                <h3 class="familia">{{especie.familia}}</h3>
+                <!-- :src="especie.imagen_principal_url" -->
+                <a href="imagenes-catalogo/01403o_IMG_9608_ed-300nr_jda.jpg" target="_blank">
+                    <img class="" src="imagenes-catalogo/01403o_IMG_9608_ed-300nr_jda.jpg"
+                        alt="Imagen representativa de la especie" width="100%" height="auto">
+                </a>
+            </section>
+            <section class="main-columna-derecha e2">
+                <article>
+                    <div class="contenedor-lengua-terminal">
+                        <p class="texto-libro">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam molestiae facere reiciendis
+                            tenetur
+                            dolore doloribus, minus mollitia sint officiis consectetur repellendus quod at, autem
+                            corporis
+                            dicta
+                            sed
+                            quidem doloremque. Accusantium?
+                            Vitae vel recusandae eligendi, est inventore voluptates necessitatibus laudantium tempore
+                            delectus
+                            enim,
+                            quo ut? Eveniet perferendis repellat reprehenderit reiciendis nobis, mollitia aliquid ipsam
+                            vel
+                            est
+                            ipsum atque quasi tempora voluptatibus.
+                            Adipisci dignissimos dolores porro explicabo corporis, minima exercitationem eaque provident
+                            nemo
+                            tempore obcaecati molestiae labore, consequatur quos laborum placeat odio illo! Velit
+                            voluptates
+                            molestiae nesciunt quia accusantium vel vitae itaque.
+                            Dignissimos sequi vero deleniti obcaecati molestias nemo. Fugit, consequatur. Debitis ullam
+                            quibusdam,
+                            soluta qui perferendis quidem facere harum molestias culpa nihil itaque quod officia
+                            laboriosam,
+                            enim,
+                            aliquid tenetur esse consequuntur.
+                            Consequatur architecto soluta sit dolore fugiat. Quo ullam magnam ex quisquam corporis
+                            optio,
+                            cumque
+                            eius esse unde facilis eligendi. Corrupti non nisi quasi ducimus incidunt eaque doloremque
+                            consectetur
+                            aspernatur et!aliquid tenetur esse consequuntur.
+                            Consequatur architecto soluta sit dolore fugiat. Quo ullam magnam ex quisquam corporis
+                            optio,
+                            cumque
+                            eius esse unde facilis eligendi. Corrupti non nisi quasi ducimus incidunt eaque doloremque
+                            consectetur
+                            aspernatur et!
+                        </p>
+                    </div>
+                </article>
+                <hr class="divisor-lengua-terminal--traduccion">
+                <article>
+                    <div class="menu-traduccion ">
+                        <button class="menu-traduccion-item activo">Español</button>
+                        <button class="menu-traduccion-item">English</button>
+                    </div>
+                    <div class="contenedor-traduccion">
+                        <p class="texto-libro">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam molestiae facere reiciendis
+                            tenetur
+                            dolore doloribus, minus mollitia sint officiis consectetur repellendus quod at, autem
+                            corporis
+                            dicta
+                            sed
+                            quidem doloremque. Accusantium?
+                            Vitae vel recusandae eligendi, est inventore voluptates necessitatibus laudantium tempore
+                            delectus
+                            enim,
+                            quo ut? Eveniet perferendis repellat reprehenderit reiciendis nobis, mollitia aliquid ipsam
+                            vel
+                            est
+                            ipsum atque quasi tempora voluptatibus.
+                            Adipisci dignissimos dolores porro explicabo corporis, minima exercitationem eaque provident
+                            nemo
+                            tempore obcaecati molestiae labore, consequatur quos laborum placeat odio illo! Velit
+                            voluptates
+                            molestiae nesciunt quia accusantium vel vitae itaque.
+                            Dignissimos sequi vero deleniti obcaecati molestias nemo. Fugit, consequatur. Debitis ullam
+                            quibusdam,
+                            soluta qui perferendis quidem facere harum molestias culpa nihil itaque quod officia
+                            laboriosam,
+                            enim,
+                            aliquid tenetur esse consequuntur.
+                            Consequatur architecto soluta sit dolore fugiat. Quo ullam magnam ex quisquam corporis
+                            optio,
+                            cumque
+                            eius esse unde facilis eligendi. Corrupti non nisi quasi ducimus incidunt eaque doloremque
+                            consectetur
+                            aspernatur et!aliquid tenetur esse consequuntur.
+                            Consequatur architecto soluta sit dolore fugiat. Quo ullam magnam ex quisquam corporis
+                            optio,
+                            cumque
+                            eius esse unde facilis eligendi. Corrupti non nisi quasi ducimus incidunt eaque doloremque
+                            consectetur
+                            aspernatur et!
+                        </p>
+
+                    </div>
+                </article>
+            </section>
+
+        </main>
+        <aside class="contenedor-menu-flotante abierto e1" id="sidebar-menu">
+            <nav class="menu-flotante e2" onclick="">
+                <div class="menu-flotante-header">
+                    <button onclick="Cerrar();">x</button>
+                    <h4>Contenido</h4>
+
+                </div>
+
+
+            </nav>
+            <div class="e3">
+                <button class="boton-menu-flotante" onclick="Abrir();">
+                    <span class="material-icons-sharp ">
+                        view_list
+                    </span>
+                </button>
+                <span class="material-icons-sharp ">
+                    keyboard_arrow_right
+                </span>
+            </div>
+        </aside>
+        <footer class=" ">
+            <p>paginador</p>
+        </footer>
+    </div>
     </script>
     <!-- INSTALACION DE VUE -->
     <!-- Desarrollo -->
@@ -40,7 +193,17 @@
     <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2"></script> -->
     <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.min.js"></script> -->
     <!-- Cargando código aplicación -->
-    <script type="module" src="elemento-grid.js"></script>
+    <script type="module" src="xxxx.js"></script>
+    <!-- funcion para animar y desplegar barra lateral -->
+    <script>
+        function Abrir() {
+            document.getElementById("sidebar-menu").style.left = "0";
+        }
+        function Cerrar() {
+            document.getElementById("sidebar-menu").style.left = "-39.5%";
+        }
+    </script>
+
 </body>
 
 </html>

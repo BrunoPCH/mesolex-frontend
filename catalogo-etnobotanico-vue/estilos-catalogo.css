@@ -142,7 +142,7 @@ table {
 
   /*===========Interface===============*/
   --interface0: #4f5931;
-  --interface1: #6E7B46;
+  --interface1: #6e7b46;
   --interface2: #92a1a3;
   --interface3: #afc3c1;
   --interface4: #d3ebe9;
@@ -421,28 +421,58 @@ a:visited {
 /*>>>>>>>>>>>>>>>>>>>>>>>BOTONES<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 button {
+  font-family: "Fira Sans", sans-serif;
+  background: var(--gris2);
+  border: none;
+  font-size: 0.75rem;
+  line-height: 100% !important;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 0.25rem 0.4rem;
+  margin: 0.25rem;
+  color: #fff;
+  transition: background 0.3s ease-in-out;
+  cursor: pointer;
+}
+button:first-of-type {
+  margin-left: 0rem;
+}
+button:last-of-type {
+  margin-right: 0;
+}
+button:hover {
+  background: var(--gris1);
+  transition: background 0.3s ease-in-out;
+}
+button.activo {
+  background: var(--interface1);
+  color: #fff;
+  transition: background 0.3s ease-in-out;
 }
 button.boton__icono__tipo_visualizacion {
-  width: 28px;
-  height: 28px;
+  width: 28px !important;
+  height: 28px !important;
   border: none;
   background: var(--gris2);
   color: #fff;
-  padding: 1px 0 0 0;
+  padding: 1px 0 0 0 !important;
   margin: 0.125rem;
+  transition: background 0.3s ease-in-out;
 }
 button.boton__icono__tipo_visualizacion:hover {
   background: var(--gris1);
+  transition: background 0.3s ease-in-out;
 }
 
 button.boton__icono__tipo_visualizacion-activo {
-  width: 28px;
-  height: 28px;
+  width: 28px !important;
+  height: 28px !important;
   border: none;
   background: var(--interface1);
   color: #fff;
-  padding: 1px 0 0 0;
+  padding: 1px 0 0 0 !important;
   margin: 0.125rem;
+  transition: background 0.3s ease-in-out;
 }
 button.boton__icono__tipo_visualizacion-activo:hover {
   cursor: not-allowed;
@@ -582,7 +612,6 @@ h6 {
   background-color: #fff;
 }
 
-
 .indice__tarjeta__header {
   background-color: var(--negro);
   background-blend-mode: multiply;
@@ -602,7 +631,7 @@ h6 {
   font-size: 0;
   text-decoration: none;
   color: #fff;
-  text-shadow: 3px 2px 3px rgba(0, 0, 0, 0.90);
+  text-shadow: 3px 2px 3px rgba(0, 0, 0, 0.9);
 }
 .indice__tarjeta__header__liga:visited {
   color: #fff;
@@ -620,20 +649,19 @@ h6 {
   opacity: 0.45;
   /* filter: blur(0px);
   -webkit-filter: blur(0px); */
-  transition: filter, opacity .3s ease-in;
+  transition: filter, opacity 0.3s ease-in;
 }
 .indice__tarjeta__header:hover .indice__tarjeta__header__liga__img {
   opacity: 0.85;
   background-blend-mode: multiply;
   /* filter: blur(3px);
   -webkit-filter: blur(3px); */
-  transition: filter, opacity .3s ease-in;
+  transition: filter, opacity 0.3s ease-in;
 }
 .indice__tarjeta__header:hover {
   /* background-color: var(--gris1); */
-  transition: filter, opacity .3s ease-in;
+  transition: filter, opacity 0.3s ease-in;
 }
-
 
 .indice__tarjeta__header__data-container {
   position: absolute;
@@ -642,10 +670,10 @@ h6 {
   bottom: 0 !important;
   right: 0 !important;
   padding: 1rem;
-  
+
   display: flex;
   flex-flow: row wrap;
-  
+
   align-content: flex-end;
 }
 
@@ -654,30 +682,25 @@ h6 {
   bottom: 4rem;
   left: 1rem; */
   width: 100%;
-  
+
   font-size: 1rem;
   font-style: normal;
   line-height: normal;
   letter-spacing: 2px;
-  margin-bottom: .5rem !important;
+  margin-bottom: 0.5rem !important;
   /* min-height: 2.2rem; */
-  
-  
 }
 .indice__tarjeta__header__liga__familia {
   /* position: absolute;
   bottom: 1rem;
   left: 1rem; */
   width: 100%;
-  
+
   margin: 0 0 0 0 !important;
-  font-size: .7rem;
+  font-size: 0.7rem;
   line-height: normal;
   letter-spacing: 2px;
   font-weight: 600;
-  
-
-  
 }
 .indice__tarjeta__body__title {
   margin-left: 0.88rem;
@@ -688,11 +711,11 @@ h6 {
 /* PARA VISTA POR LISTA */
 .indice-list {
   width: 100%;
-  max-height: 350px;
+  max-height: 600px;
 
   display: flex;
   flex-flow: column wrap;
-  align-items:baseline;
+  align-items: baseline;
   justify-content: baseline;
 
   align-content: space-between;
@@ -710,7 +733,7 @@ h6 {
   align-items: center;
   max-height: 2.8rem;
   min-height: 1.3rem;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 .indice__tarjeta__header-vista-lista {
   /* border: 1px solid red; */
@@ -727,12 +750,18 @@ h6 {
   display: none;
   visibility: hidden;
 }
+.indice__tarjeta__header__data-container-vista-lista {
+  position: relative;
+  padding: 1rem;
+
+  display: block;
+}
 .indice__tarjeta__header__liga__titulo-vista-lista {
   font-size: 1rem;
   line-height: normal;
   font-weight: 400;
   color: var(--interface1);
-  margin: 0 1rem !important;
+  margin: 0 !important;
 }
 
 @media only screen and (min-width: 1200px) {
@@ -750,13 +779,11 @@ h6 {
   :root {
     font-size: 18px;
   }
-  
 }
 @media only screen and (min-width: 768px) and (max-width: 990px) {
   :root {
     font-size: 18px;
   }
-  
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   :root {
@@ -765,8 +792,6 @@ h6 {
   .indice__item {
     width: 50%;
   }
-  
-  
 }
 @media only screen and (max-width: 575px) {
   :root {
@@ -840,6 +865,5 @@ h6 {
   }
   .indice__tarjeta {
     flex-basis: 100%;
-    
   }
 }

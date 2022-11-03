@@ -1,0 +1,140 @@
+html {
+  background-color: #f8f8f8;
+  height: 100vh;
+}
+.contenedor-general {
+  position: relative;
+  overflow: hidden;
+}
+
+.menu-lengua-terminal {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+.lengua-terminal-item.activo {
+  background-color: var(--interface1);
+  transition: background-color 1s ease-in-out;
+}
+.lengua-terminal-item.activo:hover {
+  cursor: not-allowed;
+}
+.boton-iconos-lengua-terminal-item {
+  width: 25px !important;
+  height: 25px !important;
+  padding: 0;
+}
+main.contendor-textos {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+  height: calc(72vh + 2rem + 1rem + 1px + 2rem);
+  column-gap: 2rem;
+  width: 100%;
+}
+.main-columna-izquierda {
+  flex-basis: calc(40% - 1rem);
+  height: 100%;
+  overflow-y: hidden;
+  flex-grow: 1;
+}
+.nombre-especie-lengua-terminal {
+  font-size: 1.6rem;
+  color: var(--interface0);
+}
+.nombre-cientifico {
+  font-weight: 400;
+  font-size: 0.77rem;
+  line-height: 140%;
+}
+.familia {
+  color: var(--gris1);
+  font-weight: 500;
+  font-size: 0.6rem;
+}
+.main-columna-derecha {
+  flex-basis: calc(60% - 1rem);
+  /* height: calc(72vh + 2rem + 1rem + 1px + 2rem); */
+  height: 100%;
+  flex-grow: 1;
+  overflow-y: hidden;
+}
+.contenedor-lengua-terminal {
+  max-height: 35.5vh;
+  overflow-y: scroll;
+}
+
+hr.divisor-lengua-terminal--traduccion {
+  border-top: solid 1px var(--gris4);
+  margin: 1.5rem 0 0.5rem 0;
+}
+
+#icono-indicador-reproduccion {
+  margin-left: 1rem;
+  color: var(--gris3);
+}
+
+.contenedor-traduccion {
+  max-height: 35.5vh;
+  overflow-y: scroll;
+}
+
+.menu-traduccion-item.activo {
+  background-color: var(--negro);
+  transition: background-color 1s ease-in-out;
+}
+.menu-traduccion-item.activo:hover {
+  cursor: not-allowed;
+}
+.menu-traduccion {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 1rem 0;
+}
+p.texto-libro {
+  color: var(--negro);
+}
+.contenedor-menu-flotante {
+  position: absolute;
+  top: 0.5rem;
+  left: -39.5%;
+  transition: left 350ms ease-in-out;
+  /* left: 0rem; */
+  height: calc(72vh + 2rem + 1rem + 1px + 2rem + 3.25rem);
+  width: 47%;
+  display: flex;
+  flex-flow: row nowrap;
+  column-gap: 1rem;
+}
+/* .contenedor-menu-flotante .cerrado {
+  left: -39.5%;
+  transition: left 350ms ease-in-out;
+}
+.contenedor-menu-flotante .abierto {
+  left: 0;
+  transition: left 350ms ease-in-out;
+} */
+
+/* #aside-contenedor-flotante:target {
+  /* transform: translateX(81%);
+  transition: transform 200ms ease-in-out; 
+  background-color: red;
+} */
+/* .contenedor-menu-flotante:hover {
+  transform: translateX(81%);
+  transition: transform 200ms ease-in-out;
+} */
+
+.menu-flotante {
+  flex-grow: 1;
+  background: #fff;
+  padding-left: 2rem;
+  box-shadow: 3px 6px 7px 1px rgba(0, 0, 0, 0.42);
+  -webkit-box-shadow: 3px 6px 7px 1px rgba(0, 0, 0, 0.42);
+  -moz-box-shadow: 3px 6px 7px 1px rgba(0, 0, 0, 0.42);
+}
