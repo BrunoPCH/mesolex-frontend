@@ -38,38 +38,39 @@ Vue.component(
   "libro-especie-card", //2.1 nombre del componente
   libroEspecieCardComponent //2.2 Asignamos el componente
 );
-new Vue({
-  el: "#vue-grid-list",
-  data() {
-    return {
-      especies: [
-        "Sambucus nigra",
-        "Amaranthus hybridus",
-        "Amaranthus spinosus",
-        "Spondias purpurea",
-        "Plumeria rubra",
-        "Bidens odorata",
-        "Porophyllum ruderale",
-        "Tagetes erecta",
-        "Crescentia cujete",
-        "Parmentiera aculeata",
-        "Tabebuia rosea",
-        "Wigandia urens",
-        "Bursera simaruba",
-        "Rhipsalis baccifera",
-        "Celtis iguanaea",
-        "Trema micrantha",
-        "Canna indica",
-        "Couepia polyandra",
-        "Licania platypus",
-        "Commelina erecta",
-        "Tradescantia zebrina",
-        "Cuscuta",
-        "Ipomoea batatas",
-        "Ipomoea indica",
-        "Merremia umbellata",
-        "Costus",
-      ],
-    };
-  },
-});
+
+// new Vue({
+//   el: "#vue-grid-list",
+//   data() {
+//     return {
+//       especies: [
+//         "Sambucus nigra",
+//         "Amaranthus hybridus",
+//         "Amaranthus spinosus",
+//         "Spondias purpurea",
+//         "Plumeria rubra",
+//         "Bidens odorata",
+//         "Porophyllum ruderale",
+//         "Tagetes erecta",
+//         "Crescentia cujete",
+//         "Parmentiera aculeata",
+//         "Tabebuia rosea",
+//         "Wigandia urens",
+//         "Bursera simaruba",
+//         "Rhipsalis baccifera",
+//         "Celtis iguanaea",
+//         "Trema micrantha",
+//         "Canna indica",
+//         "Couepia polyandra",
+//         "Licania platypus",
+//         "Commelina erecta",
+//         "Tradescantia zebrina",
+//         "Cuscuta",
+//         "Ipomoea batatas",
+//         "Ipomoea indica",
+//         "Merremia umbellata",
+//         "Costus",
+//       ],
+//     };
+//   },
+// });
