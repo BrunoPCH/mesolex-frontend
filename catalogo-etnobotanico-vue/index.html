@@ -1,51 +1,62 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="estilos-catalogo.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos-catalogo.css" />
     <title>Índice | Index</title>
     <!-- imagen destacada de sitio -->
-    <meta property="og:image" content="imagenes/miniaturas-index/sambucus_nigra_01403o_IMG_9608_ed-300nr_jda_thumb.jpg">
+    <meta
+      property="og:image"
+      content="imagenes/miniaturas-index/sambucus_nigra_01403o_IMG_9608_ed-300nr_jda_thumb.jpg"
+    />
     <!-- Google Fonts -->
     <!-- Fira sans y fira sans condensed -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet" />
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <!-- Iconos de materialice por medio de googlefonts https://developers.google.com/fonts/docs/material_icons-->
     <!-- Catálogo iconos de google: https://fonts.google.com/icons -->
     <link
-        href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
-        rel="stylesheet" />
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet"
+    />
+  </head>
 
-
-</head>
-
-<body class="">
+  <body class="">
     <header class="header_home">
-        <div class="contenedor-general ">
-            <h1 class="header__titulo ">Catálo de <wbr>etnobotánica</h1>
-        </div>
+      <div class="contenedor-general">
+        <h1 class="header__titulo">Catálo de <wbr />etnobotánica</h1>
+      </div>
     </header>
     <main class="" id="app">
-        <div class="main__contenedor_general ">
-            <section class="main__contenedor_general__header ">
-                <h2 class="">Contenido</h2>
-                <div class="main__contenedor_general__header__contendor__iconos__tipo_visualizacion ">
-                    <button class="boton__icono__tipo_visualizacion" @onclick="toggleView">
-                        <span @onclick="toggleView" class="material-icons-sharp icono__tipo_visualizacion">
-                            {{isGrid ? "grid_view" : "view_list"}}</span>
-                    </button>
-                    <!-- <button class="boton__icono__tipo_visualizacion-activo" onclick="">
+      <div class="main__contenedor_general">
+        <section class="main__contenedor_general__header">
+          <h2 class="">Contenido</h2>
+          <div
+            class="main__contenedor_general__header__contendor__iconos__tipo_visualizacion"
+          >
+            <button
+              class="boton__icono__tipo_visualizacion"
+              @onclick="toggleView"
+            >
+              <span
+                @onclick="toggleView"
+                class="material-icons-sharp icono__tipo_visualizacion"
+              >
+                {{isGrid ? "grid_view" : "view_list"}}</span
+              >
+            </button>
+            <!-- <button class="boton__icono__tipo_visualizacion-activo" onclick="">
                         <span class="material-icons-sharp icono__tipo_visualizacion">
 
                         </span>
                     </button> -->
-                    <!-- Para intercambiar vistas necesito intercambiar las siguientes clases:
+            <!-- Para intercambiar vistas necesito intercambiar las siguientes clases:
                     •indice-grid >>>> indice-list
                     •indice__tarjeta >>>> indice__tarjeta-vista-lista
                     •indice__tarjeta__header >>>> indice__tarjeta__header-vista-lista
@@ -54,76 +65,68 @@
                     •indice__tarjeta__header__liga__titulo >>>> indice__tarjeta__header__liga__titulo-vista-lista
 
                     -->
-                </div>
-            </section>
-            <section class="main__contenedor_general__main " id="vue-grid-list">
-                <div :class="[isGrid ? 'indice-grid' : 'indice-list'] ">
-                    <libro-especie-card v-for="especie in especies" :especie="especie"></libro-especie-card>
-
-
-
-
-
-
-
-                </div>
-                <!-- ---------------------------------------------------------------------------->
-            </section>
-            <p class="smallest ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, earum. Dolor,
-                consequuntur
-                accusamus.
-                Repudiandae, eum. Similique ut, itaque esse quas temporibus est sint eligendi doloribus sed odio
-                reiciendis
-                minima dolore!
-                Enim saepe qui nulla consequuntur iste perspiciatis maxime labore totam rem quis eligendi deserunt
-                quasi
-                cumque iusto minus minima ex, ducimus, quae tenetur debitis, ut eveniet ipsum. Ullam, dolorum
-                explicabo.
-                Exercitationem voluptate iste illo quas, nam recusandae obcaecati vero deleniti corporis, mollitia
-                vitae
-                illum maxime atque fuga magnam! Sapiente ex tempora perferendis quasi! Eos aliquam quidem alias
-                molestias
-                voluptate. Officia. Esto es una prueba en git </p>
-        </div>
-
+          </div>
+        </section>
+        <section class="main__contenedor_general__main" id="vue-grid-list">
+          <div :class="[isGrid ? 'indice-grid' : 'indice-list'] ">
+            <libro-especie-card
+              v-for="especie in especies"
+              :nombre="especie"
+              :is-grid="isGrid"
+              :key="especie"
+            ></libro-especie-card>
+          </div>
+          <!-- ---------------------------------------------------------------------------->
+        </section>
+        <p class="smallest">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, earum.
+          Dolor, consequuntur accusamus. Repudiandae, eum. Similique ut, itaque
+          esse quas temporibus est sint eligendi doloribus sed odio reiciendis
+          minima dolore! Enim saepe qui nulla consequuntur iste perspiciatis
+          maxime labore totam rem quis eligendi deserunt quasi cumque iusto
+          minus minima ex, ducimus, quae tenetur debitis, ut eveniet ipsum.
+          Ullam, dolorum explicabo. Exercitationem voluptate iste illo quas, nam
+          recusandae obcaecati vero deleniti corporis, mollitia vitae illum
+          maxime atque fuga magnam! Sapiente ex tempora perferendis quasi! Eos
+          aliquam quidem alias molestias voluptate. Officia. Esto es una prueba
+          en git
+        </p>
+      </div>
     </main>
     <footer class="">
-
-        <div class="contenedor-general ">
-            <p class="smallest">Lorem ipsum dolor sit amet consectetur. </p>
-        </div>
-
+      <div class="contenedor-general">
+        <p class="smallest">Lorem ipsum dolor sit amet consectetur.</p>
+      </div>
     </footer>
     <!-- plantilla de modulo indice -->
     <script type="text/x-template" id="libro-especie-card-template">
-        <div :class=" [isGrid ? 'indice__tarjeta' : 'indice__tarjeta-vista-lista']"
-        >
-            <div :class="[isGrid ? 'indice__tarjeta__header' : 'indice__tarjeta__header-vista-lista']">
-                <a :href="especie.pagina_url" :class="[isGrid ? 'indice__tarjeta__header__liga' : 'indice__tarjeta__header__liga-vista-lista']">
-                    <img :class="[isGrid ? 'indice__tarjeta__header__liga__img' : 'oculto']"
-                        :src="especie.miniatura_img_url" alt="Imagen 1 a 1">
-                    <div :class="[isGrid ? 'indice__tarjeta__header__data-container' : 'indice__tarjeta__header__data-container-vista-lista']">
-                        <h3 :class="[isGrid ? 'indice__tarjeta__header__liga__titulo' : 'indice__tarjeta__header__liga__titulo-vista-lista']   "><i>{{especie.nombre_cientifico}}</i> {{especie.indicador_subespecie}} <i>{{especie.subespecie}}</i>  {{especie.autor}}</h3>
-                        <h4 class="indice__tarjeta__header__liga__familia">{{especie.familia}}</h4>
-                    </div>                 
-                </a>
-            </div>
-            <div class="indice__tarjeta__body">
-            </div>
-            <div class="indice__tarjeta__footer">
-                <!-- <span>{{especie.nombre_mixteco}}</span>
-                <span>{{especie.texto_mixteco}}</span>
-                <span>{{especie.texto_mixteco_ing}}</span>
-                <span>{{especie.texto_mixteco_esp}}</span> -->
-                
-            </div>
-            <!-- <audio controls>
+      <div :class=" [isGrid ? 'indice__tarjeta' : 'indice__tarjeta-vista-lista']"
+      >
+          <div :class="[isGrid ? 'indice__tarjeta__header' : 'indice__tarjeta__header-vista-lista']">
+              <a :href="especie.pagina_url" :class="[isGrid ? 'indice__tarjeta__header__liga' : 'indice__tarjeta__header__liga-vista-lista']">
+                  <img :class="[isGrid ? 'indice__tarjeta__header__liga__img' : 'oculto']"
+                      :src="especie.miniatura_img_url" alt="Imagen 1 a 1">
+                  <div :class="[isGrid ? 'indice__tarjeta__header__data-container' : 'indice__tarjeta__header__data-container-vista-lista']">
+                      <h3 :class="[isGrid ? 'indice__tarjeta__header__liga__titulo' : 'indice__tarjeta__header__liga__titulo-vista-lista']   "><i>{{especie.nombre_cientifico}}</i> {{especie.indicador_subespecie}} <i>{{especie.subespecie}}</i>  {{especie.autor}}</h3>
+                      <h4 class="indice__tarjeta__header__liga__familia">{{especie.familia}}</h4>
+                  </div>
+              </a>
+          </div>
+          <div class="indice__tarjeta__body">
+          </div>
+          <div class="indice__tarjeta__footer">
+              <!-- <span>{{especie.nombre_mixteco}}</span>
+              <span>{{especie.texto_mixteco}}</span>
+              <span>{{especie.texto_mixteco_ing}}</span>
+              <span>{{especie.texto_mixteco_esp}}</span> -->
 
-                <source :src="especie.audio_mixteco_url" type="audio/mpeg">
-                
-            </audio> -->
+          </div>
+          <!-- <audio controls>
 
-        </div>
+              <source :src="especie.audio_mixteco_url" type="audio/mpeg">
+
+          </audio> -->
+      </div>
     </script>
     <!-- INSTALACION DE VUE -->
     <!-- Desarrollo -->
@@ -137,9 +140,5 @@
     <script type="module" src="elemento-grid.js"></script>
     <!-- Codigo que cambia vista -->
     <script type="module" src="view.js"></script>
-
-
-
-</body>
-
+  </body>
 </html>

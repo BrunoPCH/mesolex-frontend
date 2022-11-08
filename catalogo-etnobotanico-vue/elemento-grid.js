@@ -9,11 +9,12 @@ let libroEspecieCardComponent = {
   template: "#libro-especie-card-template",
   // 1.2 Propiedad de entrada
   props: {
-    especie: {
+    nombre: {
       type: String,
       default: "sin especie",
       requiered: true,
     },
+    isGrid: Boolean
   },
   // 1.3 Definir data del componente
   data() {
@@ -24,7 +25,7 @@ let libroEspecieCardComponent = {
   // 4 Se crea HOOK
   created() {
     // Se extrae el nombre de la propiedad
-    let nombre = this.especie;
+    let nombre = this.nombre;
     // Se busca la informacion de al especie en el arreglo
     // de especies con Array.prototype.find()
     let especieEncontrada = especies.find(
@@ -38,39 +39,3 @@ Vue.component(
   "libro-especie-card", //2.1 nombre del componente
   libroEspecieCardComponent //2.2 Asignamos el componente
 );
-
-// new Vue({
-//   el: "#vue-grid-list",
-//   data() {
-//     return {
-//       especies: [
-//         "Sambucus nigra",
-//         "Amaranthus hybridus",
-//         "Amaranthus spinosus",
-//         "Spondias purpurea",
-//         "Plumeria rubra",
-//         "Bidens odorata",
-//         "Porophyllum ruderale",
-//         "Tagetes erecta",
-//         "Crescentia cujete",
-//         "Parmentiera aculeata",
-//         "Tabebuia rosea",
-//         "Wigandia urens",
-//         "Bursera simaruba",
-//         "Rhipsalis baccifera",
-//         "Celtis iguanaea",
-//         "Trema micrantha",
-//         "Canna indica",
-//         "Couepia polyandra",
-//         "Licania platypus",
-//         "Commelina erecta",
-//         "Tradescantia zebrina",
-//         "Cuscuta",
-//         "Ipomoea batatas",
-//         "Ipomoea indica",
-//         "Merremia umbellata",
-//         "Costus",
-//       ],
-//     };
-//   },
-// });
