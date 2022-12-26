@@ -69,23 +69,30 @@ p.descripcion-modulo {
 #mazateco:hover {
   background-color: var(--mazateco1);
 }
+#mixe {
+  background-color: var(--mixe0);
+  animation: desplegado-gpo-lenguas 1.5s ease-in-out;
+}
+#mixe:hover {
+  background-color: var(--mixe1);
+}
 #mixteco {
   background-color: var(--mixteco0);
-  animation: desplegado-gpo-lenguas 1.5s ease-in-out;
+  animation: desplegado-gpo-lenguas 1.4s ease-in-out;
 }
 #mixteco:hover {
   background-color: var(--mixteco1);
 }
 #totonaco {
   background-color: var(--totonaco0);
-  animation: desplegado-gpo-lenguas 1.4s ease-in-out;
+  animation: desplegado-gpo-lenguas 1.8s ease-in-out;
 }
 #totonaco:hover {
   background-color: var(--totonaco1);
 }
 #triqui {
   background-color: var(--triqui0);
-  animation: desplegado-gpo-lenguas 1.8s ease-in-out;
+  animation: desplegado-gpo-lenguas 1.9s ease-in-out;
 }
 #triqui:hover {
   background-color: var(--triqui1);
