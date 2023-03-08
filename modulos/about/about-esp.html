@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Normalize css es como un reset de css de 2021 https://ageek.dev/css-resets-->
+  <!-- <link rel="stylesheet" href="css/normalize.css" /> -->
+  <!-- Google Fonts -->
+  <!-- Fira sans y fira sans condensed -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <!-- Iconos de materialice por medio de googlefonts https://developers.google.com/fonts/docs/material_icons-->
+  <!-- Catálogo iconos de google: https://fonts.google.com/icons -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+    rel="stylesheet" />
+  <!--FAVICON  -->
+  <link rel="shortcut icon" href="../imagenes-generales/favicon_package/favicon.ico" type="image/x-icon" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="../imagenes-generales/favicon_package/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="../imagenes-generales/favicon_package/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="../imagenes-generales/favicon_package/favicon-16x16.png" />
+  <link rel="manifest" href="../imagenes-generales/favicon_package/site.webmanifest" />
+  <link rel="mask-icon" href="../imagenes-generales/favicon_package/safari-pinned-tab.svg" color="#5bbad5" />
+  <meta name="msapplication-TileColor" content="#da532c" />
+  <meta name="theme-color" content="#ffffff" />
+  <!-- Estilos generales css -->
+  <link rel="stylesheet" href="../css_generales/estilos_generales_mesolex.css" />
+  <!-- ESTILOS DE PANTALLA INDIVIDUAL -->
+  <link rel="stylesheet" href="about-css/about.css" />
+  <!--  -->
+  <title>Acerca de Mesolex</title>
+</head>
+
+<body class="">
+  <header class="">
+    <nav class="">
+      <a href="../home/home-esp.html">
+        <img class="logo-mesolex" src="../imagenes-generales/logo-mesolex-menu-01.svg" alt="logo mesolex" />
+      </a>
+
+      <a href="../topic-index/topic-index-esp.html" class="menu-item" id="menu-item-1">Índice temático</a>
+      <a href="../language-index/language-index-esp.html" class="menu-item" id="menu-item-2">Índice de lenguas</a>
+      <a href="../about/about-esp.html" class="menu-item" id="menu-item-3">Acerca de</a>
+      <a href="../help/help-esp.html" class="menu-item" id="menu-item-4">Ayuda</a>
+      <div class="contenedor-selector-leng">
+        <div class="menu-item-vertical-line"></div>
+        <!-- <a href="#" class="menu-item" id="selector-leng">ESP|ING</a> -->
+        <a class="selector-lenguaje-activo" href="#">ESP</a>
+        <p class="divisor-selector-lenguaje">|</p>
+        <a class="selector-lenguaje" href="#">ING</a>
+      </div>
+    </nav>
+  </header>
+  <main class="">
+    <div class="contenedor-general-rebasado">
+      <div class="contenedor-general ">
+        <div class="contenedor-columnas ">
+          <div class="contenedor-4-col contenedor-titulo-estaticas ">
+            <h1 class="titulo-estaticas " id="about-mesolex">Acerca de Mesolex</h1>
+          </div>
+          <!-- OJO CON LOS LINKS DENTRO DEL TEXTO <a> HAY QUE ACTUALIZARLOS AL SITIO FINAL -->
+          <div class="contenedor-8-col m-top-2rem ">
+            <h2 class="titulo-estaticas">Historia</h2>
+            <p>
+              <em>Mesolex: Lexicosemantic Resources for Mesoamerican Languages</em> mesoamericanas es un portal que
+              ofrece a todos los usuarios acceso directo y abierto a una amplia colección de recursos sobre lenguas
+              mesoamericanas. Este portal fue creado y diseñado para facilitar el acceso a estos recursos a hablantes
+              nativos, al público en general y a la comunidad académica. De esta manera estos grupos podrán estudiar las
+              lenguas representadas en Mesolex y en muchos casos escuchar grabaciones en audio (con transcripciones y
+              traducciones), consultar diccionarios y leer artículos sobre las mismas lenguas. Los usuarios pueden
+              llegar a consultar los recursos de Mesolex por una de dos vías desde la página principal: (1) Por lengua
+              (haciendo clic en <a href="https://trusting-payne-054535.netlify.app/es/languageIndex">Índice de
+                lenguas</a>); y (2) por tema (haciendo clic en el
+              <a href="https://trusting-payne-054535.netlify.app/es/topicIndex">Índice temático</a>).Pero Mesolex no es
+              solamente un sitio para consultar recursos lexicosemánticos sino que ofrece a los usuarios métodos
+              innovadores de consulta a dichos recursos. De gran importancia son las herramientas “back-end” (esto es,
+              almacenadas en el servidor) creadas para las búsquedas en los diccionarios de cada lengua: (a) un
+              transductor de estado finito (“finite state transducer”), (b) un tesauro, y (c) un buscador bilingüe
+              (español e inglés). Mesolex también incluye un programa recientemente desarrollado, <a
+                href="https://sylard-hsnrj.ondigitalocean.app/">SYLARD</a> (de código abierto), que convierte
+              anotaciones
+              en ELAN a HTML para que con cualquier navegador de web un usuario pueda escuchar los audios, acompañados
+              por las transcripciones y/o traducciones presentadas línea por línea.
+            </p>
+            <p>
+              Mesolex ha sido diseñado con el apoyo de una beca del National Endowment for the Humanities, Office of
+              Digital Humanities (HAA&#8209;266482&#8209;19). El contenido ha sido proporcionado por varios individuos y
+              fuentes. De
+              hecho, una meta principal de Mesolex es la de ofrecer a cualquier contribuyente potencial, particularmente
+              hablantes nativos y comunidades indígenas, un mecanismo para divulgar material acerca de sus propias
+              lenguas y culturas (p. ej., artículos, tesis, léxicos y multimedia) mediante sub&#8209;portales dedicados
+              a una
+              lengua o tema en particular. Mesolex no intenta ser un archivo permanente sino un portal para (1)
+              facilitar el descubrimiento y acceso a materiales archivados en cualquier servidor y (2) desarrollar
+              estructuras y contenido de metadatos que se puedan exportar a archivos permanentes, que pueden aceptar y
+              preservar segura y permanentemente los materiales divulgados vía Mesolex (p. ej., diccionarios, audios
+              transcritos y traducidos). En resumen, la meta de Mesolex es ser tanto un centro de divulgación de
+              recursos lexicosemánticos, como al mismo tiempo crear un mecanismo para facilitar el almacenamiento
+              permanentemente de estos mismos recursos en archivos seguros.
+            </p>
+            <p>Las dos secciones que siguen presentan las dos vías principales para accesar a los recursos ofrecidos vía
+              Mesolex: Índice temático e Índice de lenguas.
+            </p>
+          </div>
+        </div>
+        <div class="contenedor-columnas ">
+          <div class="contenedor-4-col contenedor-titulo-estaticas ">
+            <h1 class="titulo-estaticas" id="topic-index">Índice temático y sus módulos</h1>
+          </div>
+          <div class="contenedor-8-col m-top-2rem ">
+            <h2 class="titulo-estaticas">Biblioteca</h2>
+            <p>El módulo de biblioteca proporciona vínculos a archivos (generalmente en pdf) relevante a las lenguas
+              terminales que tienen representación vía Mesolex. Así el sub-portal del mixteco de Yoloxóchitl incluye
+              materiales relevantes a esta lengua, tanto publicados como no publicados (p. ej., presentaciones en
+              congresos, una guía ilustrada etnobotánica). Todos estos recursos son de libre acceso.</p>
+            <h2 class="titulo-estaticas">Videos</h2>
+            <p>El módulo de videos es simplemente un catálogo con vínculos a videos en línea (la mayoría en YouTube)
+              relevantes a cualquier lengua terminal representada en Mesolex. El administrador de cada lengua terminal
+              tiene la libertad de seleccionar y crear los vínculos que desee. El módulo de videos en Mesolex incluye y
+              presenta, mediante un catálogo en línea, los metadatos de los videos en la misma estructura que se utiliza
+              en el módulo de Biblioteca. </p>
+            <h2 class="titulo-estaticas">Audio: SYLARD</h2>
+            <p>SYLARD (Synchronized Language Annotation Result Display) es <a
+                href="https://sylard-hsnrj.ondigitalocean.app/source_code">un programa de código abierto</a> que
+              convierte archivos en ELAN (.eaf extensión) a HTML para su reproducción línea por línea mediante un
+              navegador de web. Usuarios tendrán la posibilidad de configurar la presentación en su pantalla en varios
+              formatos, como se explica en el <a href="https://sylard-hsnrj.ondigitalocean.app/usermanual">Manual de
+                usuario</a> de SYLARD. Por ejemplo, podrían cambiar la lengua de las traducciones (p. ej., de español a
+              inglés, si el archivo original de ELAN tiene traducciones en las dos lenguas), o bien pueden cambiar la
+              presentación en línea (color de la fuente, organización de los textos, etc.) a una que el usuario
+              prefiera.</p>
+            <p>SYLARD se encuentra mediante el módulo de audios en Mesolex y ofrece un catálogo de los audios con un
+              buscador y filtros (p. ej., por lengua, tema, autor). Ha sido creado para que con cualquier navegador los
+              hablantes nativos, los académicos y el público en general pueda tener acceso en línea a grabaciones en
+              audio de lenguas mesoamericanas, acompañadas por sus transcripciones y traducciones. Actualmente, para
+              disfrutar este tipo de presentación usuarios tendrían que bajar un archivo de <a
+                href="https://archive.mpi.nl/tla/elan">ELAN</a> (extensión .eaf) y el
+              audio correspondiente (.mp3 o .wav) de donde están archivados, luego bajar e instalar ELAN en su
+              computadora personal y, finalmente, vincular el audio y el archivo .eaf en su computadora mediante el
+              programa ELAN. Además, cada usuario tendría que repetir este proceso en su propia computadora. Mediante
+              SYLARD, un módulo de Mesolex, no habrá necesidad de cualquier acción por parte de los usuarios salvo la de
+              encontrar un audio en el <a href="https://sylard-hsnrj.ondigitalocean.app/catalog">catálogo de SYLARD</a>
+              y hacer clic en para activar la reproducción del audio y
+              presentación de los textos línea por línea.</p>
+            <h2 class="titulo-estaticas">Léxicos</h2>
+            <p><b>Los léxicos en Mesolex incluyen herramientas innovadoras que solucionan tres dificultades comunes en
+                cuanto a las búsquedas:</b></p>
+            <ol class="lista-ordenada-estaticas">
+              <li><b>Variación lingüística y ortográfica</b> entre lenguas cercanas;</li>
+              <li><b>Arbitrariedad de las glosas</b> en una lengua occidental, generalmente español o inglés;</li>
+              <li>
+                <b>Glosas multilingües</b> que presentan dificultades cuando simultáneamente se quiere utilizar más de
+                un diccionario con glosas en distintas lenguas L2
+              </li>
+            </ol>
+            <h3 class="titulo-estaticas">1. Variación lingüística y ortográfica</h3>
+            <p>Variaciones lingüísticas y ortográficas entre lenguas relacionadas generalmente complican el
+              descubrimiento de lemas. Por ejemplo, un hablante nativo del náhuatl puede buscar la entrada para
+              <em>tlacatl</em>
+              (‘hombre’) y sentirse frustrado cuando no encuentre esta palabra tan común. Bien podría ser porque el
+              diccionario en línea deletrea esta palabra como <em>tla:katl</em> (con la primera vocal, &#x3c;a&#x3e;,
+              marcada
+              como larga
+              con dos puntos y la oclusiva velar [k] escrita con &#x3c;k&#x3e; y no con &#x3c;c&#x3e; como puso el
+              usuario. Estas
+              <em>variaciones ortográficas</em> obstaculizan las búsquedas. O, si el diccionario es del náhuatl de los
+              Altos de Puebla, una búsqueda para &#x3c;tlacatl&#x3e; no encontrará la entrada &#x3c;ta:kat&#x3e;, la
+              forma cognada en
+              el náhuat de esta región donde el fonema &#x3c;tl&#x3e; no existe. Estas <em>variaciones lingüísticas</em>
+              obstaculizan las búsquedas.
+            </p>
+            <p>En general, son los usuarios que tienen que superar estos dos obstáculos (ortográfico y lingüístico) a
+              las búsquedas, cambiando y ajustando sus búsquedas, a menudo sin éxito o con muchas dificultades. Mesolex
+              integra mecanismos computacionales en el servidor para automatizar, o parcialmente automatizar, el apoyo a
+              las búsquedas, amortiguando así el esfuerzo de los usuarios. La primera herramienta son transductores de
+              estados finitos (FSTs, ‘finite state transducers’) específicos a cada lengua. Búsquedas iniciadas por los
+              usuarios (p. ej., &#x3c;tlacatl&#x3e;) se canalizan automáticamente por un FST que convierte la secuencia
+              escrita
+              por el usuario a otras secuencias equivalentes (así &#x3c;tlacatl&#x3e; se convierte en &#x3c;tla:catl,
+              tla:ca:tl,
+              tlaca:tl, tlakatl, tla:katl …, tacat&#x3e;, etc.) para poder encontrar automáticamente cualquier
+              variación ortográfica (p. ej., &#x3c;tlakatl&#x3e;) o lingüística (p. ej., &#x3c;ta:kat&#x3e;) utilizada
+              en el
+              diccionario que es diferente a la forma que busca el usuario. Los FSTs son poderosos y pueden
+              neutralizar distinciones ortográficas y lingüísticas que los usuarios no manejan: cantidad
+              vocálica en el náhuatl, tonos en mixteco, diferencias en fonación en mazateco y totonaco y el
+              contraste entre consonantes fortis y lenis en el triqui. Toda esta flexibilidad es automática,
+              un producto de tener en el servidor FSTs específicos a cada lengua.</p>
+
+            <h3 class="titulo-estaticas">2. Glosas arbitrarias</h3>
+            <p>Los usuarios también podrían quedar frustrados cuando sus búsquedas en lenguas occidentales, aún para los
+              términos más básicos, no encuentran la palabra deseada. A menudo esto se debe a las decisiones tomadas por
+              el lexicógrafo al crear la entrada. Por ejemplo, una búsqueda para &#x3c;culebra&#x3e; podría no encontrar
+              <i>ko¹o⁴</i> en
+              mixteco, <i>kowa:t</i> en náhuatl o <i>lu:wa'</i> en totonaco porque los lexicógrafos utilizaron la glosa
+              &#x3c;víbora&#x3e; o
+              &#x3c;serpiente&#x3e; y no &#x3c;culebra&#x3e;. Para solucionar este problema Mesolex tiene instalado un
+              tesauro en el
+              servidor que descubre sinónimos y los integra en una búsqueda. Así, por ejemplo, cuando el usuario
+              busca la glosa &#x3c;culebra&#x3e;, primero se envía esta palabra al tesauro que convierte la búsqueda a
+              una
+              serie de sinónimos: &#x3c;culebra | serpiente | víbora&#x3e;. O, por ejemplo, una búsqueda para
+              &#x3c;contemplar&#x3e; podría fracasar en encontrar la entrada indicada pero si este termino pasa por un
+              tesauro encontrará las entradas relevantes para &#x3c;pensar&#x3e;, &#x3c;ponderar&#x3e; y otras
+              semánticamente
+              relacionadas.
+            </p>
+            <h3 class="titulo-estaticas">3. Búsquedas bilingües</h3>
+            <p>Finalmente, a veces los usuarios van a querer buscar simultáneamente en varios diccionarios, algunos de
+              los cuales podrían estar en lenguas L2 distintas (principalmente español e inglés). Para facilitar este
+              proceso en el futuro Mesolex tendrá incorporado al servidor una sencilla lista bilingüe que extenderá una
+              búsqueda a los equivalentes en distintas lenguas L2. Así, por ejemplo, una búsqueda para &#x3c;cat&#x3e;
+              en un
+              diccionario encontrará &#x3c;gato&#x3e; (y &#x3c;gata&#x3e;) y una búsqueda para &#x3c;perro&#x3e;
+              encontrará &#x3c;dog&#x3e;
+            </p>
+            <p>
+              Las tres susodichas herramientas (transductores de estados finitos, tesauro, diccionario bilingüe)
+              facilitan el descubrimiento de lo buscado a pesar de los desafíos que se mencionan en los párrafos
+              anteriores.
+            </p>
+            <h2 class="titulo-estaticas">Flora y Fauna</h2>
+            <p>El módulo de Flora y Fauna es un libro electrónico en desarrollo acerca del conocimiento etnobiológico de
+              comunidades indígenas en México. Por el momento se presenta solamente el prototipo, con un contenido
+              limitado.</p>
+            <p>
+              NNótese que varias guías ilustradas de etnobotánica están en Mesolex y se pueden accesar mediante el
+              módulo Biblioteca. Este material entre otros textos se puede encontrar o pasando por el subportal de una
+              lengua terminal y después a Biblioteca o bien directamente por el módulo Biblioteca del Índice temático
+              buscando, en este caso, todo texto que menciona ‘etnobo…’).
+            </p>
+          </div>
+        </div>
+        <div class="contenedor-columnas ">
+          <div class="contenedor-4-col contenedor-titulo-estaticas ">
+            <h1 class="titulo-estaticas " id="language-index">Índice de lenguas</h1>
+          </div>
+          <div class="contenedor-8-col m-top-2rem" id="about-ultimo">
+            <h2 class="titulo-estaticas">Resumen</h2>
+            <p>El <a href="https://trusting-payne-054535.netlify.app/es/languageIndex">Índice de lenguas</a> es una
+              manera fácil de encontrar recursos en Mesolex vía la lengua relevante. Mediante esta vía un usuario
+              primero pasa por el Grupo de lenguas (p. ej., Amuzgo, Maya, Mazateco, Mixe, etc.) que representa un nodo
+              taxonómico superior en un árbol filogenético de lenguas. El nivel del nodo es, de una manera, arbitrario.
+              Así Mesolex no tiene un grupo de lenguas designado como amuzgo-mixteco sino grupos menores: Amuzgo,
+              Mixteco y Triqui (en el futuro quizá se agregará Cuicateco o bien se cambiará Mixteco a
+              Mixteco-Cuicateco). Una vez que un usuario haga clic en un grupo de lenguas, aparece una lista de lo que
+              se ha designado “lenguas terminales”, que son las lenguas con recursos en Mesolex. Por ejemplo, el <a
+                href="https://trusting-payne-054535.netlify.app/es/languageIndexView/mixtec">
+                grupo de lenguas Mixteco</a> incluye 4 lenguas terminales más “Mixteco histórico (proto-Mixteco)” que
+              ofrece una discusión y un léxico de formas del proto-mixteco. Finalmente, al hacer clic en cualquiera de
+              las lenguas terminales el usuario es remitido a la página principal de una lengua terminal como la de San
+              Pedro Amuzgos, Amuzgo, aquí ilustrada.</p>
+            <h4 class="titulo-estaticas">Ejemplo de la página de una lengua terminal</h4>
+            <img class="imagen-estaticas-columna-grande" src="about-index-imagenes/pantalla-emergente-about-es.jpg"
+              alt="Ejemplo de la página de una lengua terminal">
+            <p>Como se ve en la captura de pantalla de San Pedro Amuzgos, al pie aparecen los tópicos tal como aparecen
+              en la página principal del Índice temático. Al accesar a los recursos mediante la página de una lengua
+              terminal se aplica automáticamente un filtro para que se muestren solamente lo que es pertinente a la
+              lengua terminal activa.</p>
+            <p>
+              En cuanto a créditos, para todos los subportales de lenguas terminales hay un administrador o grupo de
+              administradores, generalmente investigadores de la lengua, quienes seleccionan el contenido de subportal y
+              lo suben al servidor. El administrador (o administradores) y las instituciones que han apoyado la
+              investigación de cada lengua terminal reciben los créditos pertinentes. Cada lengua terminal, entonces,
+              tienen créditos distintos, visibles al hacer clic en el link Créditos, que está en rojo.
+            </p>
+          </div>
+        </div>
+
+
+
+
+  </main>
+  <footer class="">
+    <nav class="nav-footer">
+      <a href="https://www.neh.gov/" target="_blank" id="logo-neh-a">
+        <img class="" src="../imagenes-generales/NEH-logo.png" alt="National Endowment for the Humanities logo"
+          id="logo-neh" />
+      </a>
+      <a href="../credits/credits-esp.html" class="footer-item">Créditos</a>
+      <a href="../terms-conditions/terms-conditions-esp.html" class="footer-item">Terminos y condiciones</a>
+      <div class="contenedor-footer-item-developed-by">
+        <p class="footer-item">Desarrollado por:</p>
+        <img src="../imagenes-generales/logo-drakoestudio-icon46px.png" alt="Drako Estudio Logo"
+          id="drako-estudio-logo" />
+        <a href="mailto: contacto@drakoestudio.com.mx." class="footer-item" id="link-drako-estudio">Drako Estudio</a>
+      </div>
+      <a href="mailto:mesolex.director@gmail.com" class="footer-item">mesolex.director@gmail.com</a>
+    </nav>
+  </footer>
+</body>
+
+</html>
