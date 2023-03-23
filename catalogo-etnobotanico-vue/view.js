@@ -43,6 +43,7 @@ new Vue({
         "Ipomoea indica",
         "Merremia umbellata",
         "Costus",
+        "Pseudobombax ellipticum",
       ],
     };
   },
