@@ -43,8 +43,12 @@
                         type="button">Comentario</button>
 
                     <button class="lengua-terminal-item boton-iconos-lengua-terminal-item" name="Play" value="Play"
-                        type="button"><span class="
-                            material-icons-sharp iconos-lengua-terminal-item">music_note</span></button>
+                        type="button">
+                        <span class="
+                            material-icons-sharp iconos-lengua-terminal-item">
+                            music_note
+                        </span>
+                    </button>
                     <button class="lengua-terminal-item boton-iconos-lengua-terminal-item" name="Rewind" value="Rewind"
                         type="button">
                         <span class="material-icons-sharp iconos-lengua-terminal-item">replay</span>
@@ -108,9 +112,9 @@
             <section class="main-columna-derecha">
                 <article>
                     <div class="contenedor-lengua-terminal">
-                        <p class="texto-libro" v-html="especie.texto_mixteco">
+                        <div v-html="especie.texto_mixteco">
                             
-                        </p>
+                        </div>
                     </div>
                 </article>
                 <hr class="divisor-lengua-terminal--traduccion">
@@ -121,9 +125,9 @@
                 <article>
                     
                     <div class="contenedor-traduccion">
-                        <p class="texto-libro" v-html="especie.texto_mixteco_esp">
+                        <div v-html="especie.texto_mixteco_esp">
                             
-                        </p>
+                        </div>
     
                     </div>
                 </article>

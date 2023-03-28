@@ -135,6 +135,7 @@ table {
 
   /*===========neutros===============*/
   --negro: #000;
+  --grisn: #4a4a4a;
   --gris1: #666;
   --gris2: #a5a5a5;
   --gris3: #c4c4c4;
@@ -442,7 +443,7 @@ button:last-of-type {
   margin-right: 0;
 }
 button:hover {
-  background: var(--gris1);
+  background: var(--grisn);
   transition: background 0.3s ease-in-out;
 }
 button.activo {
@@ -461,7 +462,7 @@ button.boton__icono__tipo_visualizacion {
   transition: background 0.3s ease-in-out;
 }
 button.boton__icono__tipo_visualizacion:hover {
-  background: var(--gris1);
+  background: var(--grisn);
   transition: background 0.3s ease-in-out;
 }
 
@@ -848,7 +849,7 @@ h6 {
     margin: 0.125rem;
   }
   button.boton__icono__tipo_visualizacion:hover {
-    background: var(--gris1);
+    background: var(--grisn);
   }
 
   button.boton__icono__tipo_visualizacion-activo {
