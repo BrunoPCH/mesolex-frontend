@@ -42,18 +42,19 @@ main.contendor-textos {
   flex-grow: 1;
 }
 .nombre-especie-lengua-terminal {
-  font-size: 1.6rem;
-  color: var(--interface0);
-}
-.nombre-cientifico {
-  font-weight: 400;
+  font-weight: 500;
   font-size: 0.77rem;
   line-height: 140%;
+  color: var(--gris1);
+}
+.nombre-cientifico {
+  font-size: 1.6rem;
+  color: var(--interface0);
 }
 .familia {
   color: var(--gris1);
   font-weight: 500;
-  font-size: 0.6rem;
+  font-size: 1rem;
 }
 .main-columna-derecha {
   flex-basis: calc(60% - 1rem);
@@ -61,10 +62,18 @@ main.contendor-textos {
   height: 100%;
   flex-grow: 1;
   overflow-y: hidden;
+
+  display: flex;
+  flex-flow: column nowrap;
+}
+.main-columna-derecha article {
+  flex-basis: 35%;
+  flex-grow: 1;
+  overflow-y: scroll;
 }
 .contenedor-lengua-terminal {
-  max-height: 35.5vh;
-  overflow-y: scroll;
+  /* min-height: 35vh; */
+  /* max-height: 35.5vh; */
 }
 
 hr.divisor-lengua-terminal--traduccion {
@@ -78,8 +87,8 @@ hr.divisor-lengua-terminal--traduccion {
 }
 
 .contenedor-traduccion {
-  max-height: 35.5vh;
-  overflow-y: scroll;
+  /* max-height: 35.5vh; */
+  /* min-height: 35vh; */
 }
 
 .menu-traduccion-item.activo {

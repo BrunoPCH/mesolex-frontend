@@ -27,146 +27,48 @@
     <title>{{especie.nombre_cientifico}} | {{numero de página}}</title>
 </head>
 
-<body id="contenedor-vue">
-    <div class="contenedor-general ">
+<body>
+
+    <div class="contenedor-general " id="contenedor-vue">
         <header>
-            <section class="">
+            <section class=" ">
                 <nav class="menu-lengua-terminal ">
                     <button class="lengua-terminal-item activo" name="mixteco" value="mixteco"
                         type="button">Mixteco</button>
                     <button class="lengua-terminal-item" name="Náhuatl" value="Náhuatl" type="button">Náhuatl</button>
                     <button class="lengua-terminal-item" name="Totonaco" value="Totonaco"
                         type="button">Totonaco</button>
-                    <button class="lengua-terminal-item" name="Triqui" value="Triqui" type="button">Triqui</button>
+                    <!-- <button class="lengua-terminal-item" name="Triqui" value="Triqui" type="button">Triqui</button> -->
                     <button class="lengua-terminal-item" name="Comentario" value="Comentario"
                         type="button">Comentario</button>
+
                     <button class="lengua-terminal-item boton-iconos-lengua-terminal-item" name="Play" value="Play"
                         type="button"><span class="
-                            material-icons-sharp iconos-lengua-terminal-item">play_arrow</span></button>
+                            material-icons-sharp iconos-lengua-terminal-item">music_note</span></button>
                     <button class="lengua-terminal-item boton-iconos-lengua-terminal-item" name="Rewind" value="Rewind"
-                        type="button"><span
-                            class="material-icons-sharp iconos-lengua-terminal-item">replay</span></button>
+                        type="button">
+                        <span class="material-icons-sharp iconos-lengua-terminal-item">replay</span>
+                    </button>
+                    <button class="lengua-terminal-item boton-iconos-lengua-terminal-item" name="Back" value="Back"
+                        type="button" onclick="window.location='index.html'">
+                        <span class="material-icons-sharp iconos-lengua-terminal-item">
+                            arrow_back
+                        </span>
+                    </button>
                     <!-- <span class="material-icons-sharp" id="icono-indicador-reproduccion">volume_up</span> -->
                 </nav>
             </section>
         </header>
-        <main class="contendor-textos ">
-            <section class="main-columna-izquierda ">
-                <h1 class="nombre-especie-lengua-terminal">{{especie.nombre_ mixteco}}</h1>
-                <h2 class="nombre-cientifico"><i>{{especie.nombre_cientifico}}</i>
-                    {{especie. indicador_subespecie}} <i>{{especie.subespecie}}</i> {{especie.autor}}</h2>
-                <h3 class="familia">{{especie.familia}}</h3>
-                <!-- :src="especie.imagen_principal_url" -->
-                <a href="imagenes-catalogo/01403o_IMG_9608_ed-300nr_jda.jpg" target="_blank">
-                    <img class="" src="imagenes-catalogo/01403o_IMG_9608_ed-300nr_jda.jpg"
-                        alt="Imagen representativa de la especie" width="100%" height="auto">
-                </a>
-            </section>
-            <section class="main-columna-derecha ">
-                <article>
-                    <div class="contenedor-lengua-terminal">
-                        <p class="texto-libro">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam molestiae facere reiciendis
-                            tenetur
-                            dolore doloribus, minus mollitia sint officiis consectetur repellendus quod at, autem
-                            corporis
-                            dicta
-                            sed
-                            quidem doloremque. Accusantium?
-                            Vitae vel recusandae eligendi, est inventore voluptates necessitatibus laudantium tempore
-                            delectus
-                            enim,
-                            quo ut? Eveniet perferendis repellat reprehenderit reiciendis nobis, mollitia aliquid ipsam
-                            vel
-                            est
-                            ipsum atque quasi tempora voluptatibus.
-                            Adipisci dignissimos dolores porro explicabo corporis, minima exercitationem eaque provident
-                            nemo
-                            tempore obcaecati molestiae labore, consequatur quos laborum placeat odio illo! Velit
-                            voluptates
-                            molestiae nesciunt quia accusantium vel vitae itaque.
-                            Dignissimos sequi vero deleniti obcaecati molestias nemo. Fugit, consequatur. Debitis ullam
-                            quibusdam,
-                            soluta qui perferendis quidem facere harum molestias culpa nihil itaque quod officia
-                            laboriosam,
-                            enim,
-                            aliquid tenetur esse consequuntur.
-                            Consequatur architecto soluta sit dolore fugiat. Quo ullam magnam ex quisquam corporis
-                            optio,
-                            cumque
-                            eius esse unde facilis eligendi. Corrupti non nisi quasi ducimus incidunt eaque doloremque
-                            consectetur
-                            aspernatur et!aliquid tenetur esse consequuntur.
-                            Consequatur architecto soluta sit dolore fugiat. Quo ullam magnam ex quisquam corporis
-                            optio,
-                            cumque
-                            eius esse unde facilis eligendi. Corrupti non nisi quasi ducimus incidunt eaque doloremque
-                            consectetur
-                            aspernatur et!
-                        </p>
-                    </div>
-                </article>
-                <hr class="divisor-lengua-terminal--traduccion">
-                <article>
-                    <div class="menu-traduccion ">
-                        <button class="menu-traduccion-item activo">Español</button>
-                        <button class="menu-traduccion-item">English</button>
-                    </div>
-                    <div class="contenedor-traduccion">
-                        <p class="texto-libro">
-                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam molestiae facere reiciendis
-                            tenetur
-                            dolore doloribus, minus mollitia sint officiis consectetur repellendus quod at, autem
-                            corporis
-                            dicta
-                            sed
-                            quidem doloremque. Accusantium?
-                            Vitae vel recusandae eligendi, est inventore voluptates necessitatibus laudantium tempore
-                            delectus
-                            enim,
-                            quo ut? Eveniet perferendis repellat reprehenderit reiciendis nobis, mollitia aliquid ipsam
-                            vel
-                            est
-                            ipsum atque quasi tempora voluptatibus.
-                            Adipisci dignissimos dolores porro explicabo corporis, minima exercitationem eaque provident
-                            nemo
-                            tempore obcaecati molestiae labore, consequatur quos laborum placeat odio illo! Velit
-                            voluptates
-                            molestiae nesciunt quia accusantium vel vitae itaque.
-                            Dignissimos sequi vero deleniti obcaecati molestias nemo. Fugit, consequatur. Debitis ullam
-                            quibusdam,
-                            soluta qui perferendis quidem facere harum molestias culpa nihil itaque quod officia
-                            laboriosam,
-                            enim,
-                            aliquid tenetur esse consequuntur.
-                            Consequatur architecto soluta sit dolore fugiat. Quo ullam magnam ex quisquam corporis
-                            optio,
-                            cumque
-                            eius esse unde facilis eligendi. Corrupti non nisi quasi ducimus incidunt eaque doloremque
-                            consectetur
-                            aspernatur et!aliquid tenetur esse consequuntur.
-                            Consequatur architecto soluta sit dolore fugiat. Quo ullam magnam ex quisquam corporis
-                            optio,
-                            cumque
-                            eius esse unde facilis eligendi. Corrupti non nisi quasi ducimus incidunt eaque doloremque
-                            consectetur
-                            aspernatur et!
-                        </p>
+        <div class="  ">
+            <pagina-interior nombre="Pseudobombax ellipticum"></pagina-interior>
 
-                    </div>
-                </article>
-            </section>
-
-        </main>
+        </div>
         <aside class="contenedor-menu-flotante abierto " id="sidebar-menu">
             <nav class="menu-flotante " onclick="">
                 <div class="menu-flotante-header">
                     <button onclick="Cerrar();">x</button>
                     <h4>Contenido</h4>
-
                 </div>
-
-
             </nav>
             <div class="">
                 <button class="boton-menu-flotante" onclick="Abrir();">
@@ -183,6 +85,58 @@
             <p>paginador</p>
         </footer>
     </div>
+
+
+
+
+    <!-- Pantilla pagina-interior -->
+    <script type="text/x-template" id="pagina-interior-template">
+
+        <main class="contendor-textos ">
+            <section class="main-columna-izquierda">
+                <h3 class="nombre-especie-lengua-terminal">{{especie.nombre_mixteco}}</h3>
+                <h1 class="nombre-cientifico"><i>{{especie.nombre_cientifico}}</i>
+                    {{especie.indicador_subespecie}} <i>{{especie.subespecie}}</i> {{especie.autor}}</h1>
+                <h2 class="familia">{{especie.familia}}</h2>
+                
+                <!-- :src="especie.imagen_principal_url" -->
+                <a :href="especie.imagen_principal_url" target="_blank">
+                    <img class="" :src="especie.imagen_principal_url" alt="Imagen representativa de la especie" width="100%"
+                        height="auto">
+                </a>
+            </section>
+            <section class="main-columna-derecha">
+                <article>
+                    <div class="contenedor-lengua-terminal">
+                        <p class="texto-libro" v-html="especie.texto_mixteco">
+                            
+                        </p>
+                    </div>
+                </article>
+                <hr class="divisor-lengua-terminal--traduccion">
+                <div class="menu-traduccion">
+                    <button class="menu-traduccion-item activo">Español</button>
+                    <button class="menu-traduccion-item">English</button>
+                </div>
+                <article>
+                    
+                    <div class="contenedor-traduccion">
+                        <p class="texto-libro" v-html="especie.texto_mixteco_esp">
+                            
+                        </p>
+    
+                    </div>
+                </article>
+            </section>
+        </main>
+        
+
+
+    </script>
+
+
+
+
     </script>
     <!-- INSTALACION DE VUE -->
     <!-- Desarrollo -->
@@ -194,6 +148,8 @@
     <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.min.js"></script> -->
     <!-- Cargando código aplicación -->
     <script type="module" src="interior-vue.js"></script>
+    <!-- <script type="module" src="view-interior.js"></script> -->
+
     <!-- funcion para animar y desplegar barra lateral -->
     <script>
         function Abrir() {

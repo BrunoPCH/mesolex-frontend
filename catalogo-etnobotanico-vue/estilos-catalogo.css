@@ -212,7 +212,7 @@ footer {
 }
 
 .contenedor-general {
-  /* min-height: 33rem; */
+  width: 100%;
   max-width: 1020px;
   margin: 0px auto;
   padding: 0 1rem;
@@ -409,7 +409,8 @@ p.smallest {
   margin-top: 0;
   margin-bottom: 0.6666rem;
 }
-i {
+i,
+em {
   font-style: italic !important;
 }
 ol {
@@ -661,6 +662,9 @@ h6 {
 .indice__tarjeta__header:hover {
   /* background-color: var(--gris1); */
   transition: filter, opacity 0.3s ease-in;
+}
+.indice__tarjeta__header:hover ~ :not(:hover) {
+  opacity: 0.3;
 }
 
 .indice__tarjeta__header__data-container {
