@@ -706,6 +706,7 @@ h6 {
   line-height: normal;
   letter-spacing: 2px;
   font-weight: 600;
+  color: var(--negro);
 }
 .indice__tarjeta__body__title {
   margin-left: 0.88rem;
