@@ -28,7 +28,6 @@
 </head>
 
 <body>
-
     <div class="contenedor-general " id="contenedor-vue">
         <header>
             <section class=" ">
@@ -63,9 +62,8 @@
                 </nav>
             </section>
         </header>
-        <div class="  ">
+        <div class="">
             <pagina-interior nombre="Pseudobombax ellipticum"></pagina-interior>
-
         </div>
         <aside class="contenedor-menu-flotante abierto " id="sidebar-menu">
             <nav class="menu-flotante " onclick="">
@@ -90,19 +88,14 @@
         </footer>
     </div>
 
-
-
-
     <!-- Pantilla pagina-interior -->
     <script type="text/x-template" id="pagina-interior-template">
-
         <main class="contendor-textos ">
             <section class="main-columna-izquierda">
                 <h3 class="nombre-especie-lengua-terminal">{{especie.nombre_mixteco}}</h3>
                 <h1 class="nombre-cientifico"><i>{{especie.nombre_cientifico}}</i>
                     {{especie.indicador_subespecie}} <i>{{especie.subespecie}}</i> {{especie.autor}}</h1>
                 <h2 class="familia">{{especie.familia}}</h2>
-                
                 <!-- :src="especie.imagen_principal_url" -->
                 <a :href="especie.imagen_principal_url" target="_blank">
                     <img class="" :src="especie.imagen_principal_url" alt="Imagen representativa de la especie" width="100%"
@@ -113,7 +106,6 @@
                 <article>
                     <div class="contenedor-lengua-terminal">
                         <div v-html="especie.texto_mixteco">
-                            
                         </div>
                     </div>
                 </article>
@@ -123,25 +115,15 @@
                     <button class="menu-traduccion-item">English</button>
                 </div>
                 <article>
-                    
                     <div class="contenedor-traduccion">
                         <div v-html="especie.texto_mixteco_esp">
-                            
                         </div>
-    
                     </div>
                 </article>
             </section>
         </main>
-        
-
-
     </script>
 
-
-
-
-    </script>
     <!-- INSTALACION DE VUE -->
     <!-- Desarrollo -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
@@ -153,7 +135,6 @@
     <!-- Cargando código aplicación -->
     <script type="module" src="interior-vue.js"></script>
     <!-- <script type="module" src="view-interior.js"></script> -->
-
     <!-- funcion para animar y desplegar barra lateral -->
     <script>
         function Abrir() {
@@ -163,7 +144,5 @@
             document.getElementById("sidebar-menu").style.left = "-39.5%";
         }
     </script>
-
 </body>
-
 </html>

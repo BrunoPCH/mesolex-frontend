@@ -34,11 +34,33 @@ let paginaInteriorComponente = {
   },
 };
 
+// Auxiliary Variables
+const topPanelOptions = {
+  MIXTEC: "text_mixteco",
+  NAHUATL: "text_nahuatl",
+  TOTONAC: "text_totonaco",
+  COMMENT: "comentario"
+};
+
+const bottomPanelOptions = {
+  ENGLISH: "_ing",
+  SPANISH: "_esp",
+};
+
 //2 registrando el componente en Vue
 Vue.component(
   "pagina-interior", //nombre del comp
   paginaInteriorComponente // def del componente
 );
+
+// Creating main instance
 new Vue({
   el: "#contenedor-vue",
+  // Component State
+  data() {
+    return {
+      topPanelSelection: topPanelOptions.MIXTEC,
+      bottomPanelSelection: bottomPanelOptions.SPANISH
+    }
+  }
 });
