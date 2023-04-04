@@ -3,6 +3,19 @@
 // importando los assets
 import especies from "./especies.json" assert { type: "json" };
 
+// Auxiliary Variables
+const topPanelOptions = {
+  mixtec: "_mixteco",
+  nahuatl: "_nahuatl",
+  totonac: "_totonaco",
+  comment: "comentario"
+};
+
+const bottomPanelOptions = {
+  english: "_ing",
+  spanish: "_esp",
+};
+
 //1. creando componente
 let paginaInteriorComponente = {
   //1.1 Especificar nombre de plantilla
@@ -14,11 +27,16 @@ let paginaInteriorComponente = {
       default: "Pseudobombax ellipticum",
       requiered: true,
     },
+    text: {
+      type: String,
+      default: topPanelOptions.mixtec
+    }
   },
   //1.3 se define data del componente
   data() {
     return {
       especie: {},
+      translationLanguage: bottomPanelOptions.spanish
     };
   },
   // 4 Se crea HOOK
@@ -32,19 +50,14 @@ let paginaInteriorComponente = {
     );
     this.especie = especieEncontrada;
   },
-};
-
-// Auxiliary Variables
-const topPanelOptions = {
-  MIXTEC: "text_mixteco",
-  NAHUATL: "text_nahuatl",
-  TOTONAC: "text_totonaco",
-  COMMENT: "comentario"
-};
-
-const bottomPanelOptions = {
-  ENGLISH: "_ing",
-  SPANISH: "_esp",
+  methods: {
+    setLanguageText(language) {
+      this.translationLanguage = bottomPanelOptions[language]
+    },
+    isButtonActive(buttonName) {
+      return bottomPanelOptions[buttonName] === this.translationLanguage;
+    }
+  }
 };
 
 //2 registrando el componente en Vue
@@ -59,8 +72,22 @@ new Vue({
   // Component State
   data() {
     return {
-      topPanelSelection: topPanelOptions.MIXTEC,
-      bottomPanelSelection: bottomPanelOptions.SPANISH
+      topPanelSelection: topPanelOptions.mixtec,
+      // bottomPanelSelection: bottomPanelOptions.SPANISH
+    }
+  },
+  methods: {
+    setLanguageText(language) {
+      this.topPanelSelection = topPanelOptions[language];
+      this.$refs.translatedText.setLanguageText("spanish");
+    },
+    isButtonActive(buttonName) {
+      return topPanelOptions[buttonName] === this.topPanelSelection;
+    }
+  },
+  computed: {
+    activeButton() {
+      return {}
     }
   }
 });
