@@ -1,140 +1,353 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Estilos generales -->
-    <link rel="stylesheet" href="estilos-catalogo.css" />
-    <!-- Estilos de página interior -->
-    <link rel="stylesheet" href="estilos-catalogo-interior.css" />
-    <!-- imagen destacada de sitio -->
-    <meta property="og:image" content="{{especie.miniatura_img_url}}" />
-    <!-- Google Fonts -->
-    <!-- Fira sans y fira sans condensed -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Iconos de materialice por medio de googlefonts https://developers.google.com/fonts/docs/material_icons-->
-    <!-- Catálogo iconos de google: https://fonts.google.com/icons -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
-      rel="stylesheet"
-    />
-    <!--Especie de la página interior-->
-    <title>{{especie.nombre_cientifico}} | {{numero de página}}</title>
-  </head>
-  <body>
-    <div class="contenedor-general" id="contenedor-vue">
-      <header>
-        <section class=" ">
-          <nav class="menu-lengua-terminal">
-            <button
-              type="button"
-              class="lengua-terminal-item"
-              name="mixteco"
-              value="mixteco"
-              :class="{ activo : isButtonActive('mixtec')}"
-              @click="setLanguageText('mixtec')"
-            >
-              Mixteco
-            </button>
-            <button
-              type="button"
-              class="lengua-terminal-item"
-              name="Náhuatl"
-              value="Náhuatl"
-              :class="{ activo : isButtonActive('nahuatl')}"
-              @click="setLanguageText('nahuatl')"
-            >
-              Náhuatl
-            </button>
-            <button
-              type="button"
-              class="lengua-terminal-item"
-              name="Totonaco"
-              value="Totonaco"
-              :class="{ activo : isButtonActive('totonac')}"
-              @click="setLanguageText('totonac')"
-            >
-              Totonaco
-            </button>
-            <!-- <button class="lengua-terminal-item" name="Triqui" value="Triqui" type="button">Triqui</button> -->
-            <button
-              type="button"
-              class="lengua-terminal-item"
-              name="Comentario"
-              value="Comentario"
-              :class="{ activo : isButtonActive('comment')}"
-              @click="setLanguageText('comment')"
-            >
-              Comentario
-            </button>
-            <button
-              class="lengua-terminal-item boton-iconos-lengua-terminal-item"
-              name="Play"
-              value="Play"
-              type="button"
-            >
-              <span class="material-icons-sharp iconos-lengua-terminal-item">
-                music_note
-              </span>
-            </button>
-            <button
-              class="lengua-terminal-item boton-iconos-lengua-terminal-item"
-              name="Rewind"
-              value="Rewind"
-              type="button"
-            >
-              <span class="material-icons-sharp iconos-lengua-terminal-item"
-                >replay</span
-              >
-            </button>
-            <button
-              class="lengua-terminal-item boton-iconos-lengua-terminal-item"
-              name="Back"
-              value="Back"
-              type="button"
-              onclick="window.location='index.html'"
-            >
-              <span class="material-icons-sharp iconos-lengua-terminal-item">
-                arrow_back
-              </span>
-            </button>
-            <!-- <span class="material-icons-sharp" id="icono-indicador-reproduccion">volume_up</span> -->
-          </nav>
-        </section>
-      </header>
-      <div class="">
-        <!-- 📃 Component -->
-        <pagina-interior ref="translatedText" nombre="Pseudobombax ellipticum" :text="topPanelSelection"></pagina-interior>
-        <!-- 📃 Component -->
-      </div>
-      <aside class="contenedor-menu-flotante abierto" id="sidebar-menu">
-        <nav class="menu-flotante" onclick="">
-          <div class="menu-flotante-header">
-            <button onclick="Cerrar();">x</button>
-            <h4>Contenido</h4>
-          </div>
-        </nav>
-        <div class="">
-          <button class="boton-menu-flotante" onclick="Abrir();">
-            <span class="material-icons-sharp"> view_list </span>
-          </button>
-          <span class="material-icons-sharp"> keyboard_arrow_right </span>
-        </div>
-      </aside>
-      <footer class=" ">
-        <p>paginador</p>
-      </footer>
-    </div>
 
-    <!-- ----------------------------------- -->
-    <!-- Pantilla pagina-interior -->
-    <script type="text/x-template" id="pagina-interior-template">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Estilos generales -->
+  <link rel="stylesheet" href="estilos-catalogo.css" />
+  <!-- Estilos de página interior -->
+  <link rel="stylesheet" href="estilos-catalogo-interior.css" />
+  <!-- imagen destacada de sitio -->
+  <meta property="og:image" content="{{especie.miniatura_img_url}}" />
+  <!-- Google Fonts -->
+  <!-- Fira sans y fira sans condensed -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <!-- Iconos de materialice por medio de googlefonts https://developers.google.com/fonts/docs/material_icons-->
+  <!-- Catálogo iconos de google: https://fonts.google.com/icons -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+    rel="stylesheet" />
+  <!--Especie de la página interior-->
+  <title>{{especie.nombre_cientifico}} | {{numero de página}}</title>
+</head>
+
+<body>
+  <div class="contenedor-general" id="contenedor-vue">
+    <header>
+      <section class=" ">
+        <nav class="menu-lengua-terminal">
+          <button type="button" class="lengua-terminal-item" name="mixteco" value="mixteco"
+            :class="{ activo : isButtonActive('mixtec')}" @click="setLanguageText('mixtec')">
+            Mixteco
+          </button>
+          <button type="button" class="lengua-terminal-item" name="Náhuatl" value="Náhuatl"
+            :class="{ activo : isButtonActive('nahuatl')}" @click="setLanguageText('nahuatl')">
+            Náhuatl
+          </button>
+          <button type="button" class="lengua-terminal-item" name="Totonaco" value="Totonaco"
+            :class="{ activo : isButtonActive('totonac')}" @click="setLanguageText('totonac')">
+            Totonaco
+          </button>
+          <!-- <button class="lengua-terminal-item" name="Triqui" value="Triqui" type="button">Triqui</button> -->
+          <button type="button" class="lengua-terminal-item" name="Comentario" value="Comentario"
+            :class="{ activo : isButtonActive('comment')}" @click="setLanguageText('comment')">
+            Comentario
+          </button>
+          <button class="lengua-terminal-item boton-iconos-lengua-terminal-item" name="Play" value="Play" type="button">
+            <span class="material-icons-sharp iconos-lengua-terminal-item">
+              music_note
+            </span>
+          </button>
+          <button class="lengua-terminal-item boton-iconos-lengua-terminal-item" name="Rewind" value="Rewind"
+            type="button">
+            <span class="material-icons-sharp iconos-lengua-terminal-item">replay</span>
+          </button>
+          <button class="lengua-terminal-item boton-iconos-lengua-terminal-item" name="Back" value="Back" type="button"
+            onclick="window.location='index.html'">
+            <span class="material-icons-sharp iconos-lengua-terminal-item">
+              arrow_back
+            </span>
+          </button>
+          <!-- <span class="material-icons-sharp" id="icono-indicador-reproduccion">volume_up</span> -->
+        </nav>
+      </section>
+    </header>
+    <div class="">
+      <!-- 📃 Component -->
+      <pagina-interior ref="translatedText" nombre="Pseudobombax ellipticum"
+        :text="topPanelSelection"></pagina-interior>
+      <!-- 📃 Component -->
+    </div>
+    <aside class="contenedor-menu-flotante abierto" id="sidebar-menu">
+      <nav class="menu-flotante" onclick="">
+        <div class="menu-flotante-header">
+          <button onclick="Cerrar();">x</button>
+          <h4>Contenido</h4>
+        </div>
+        <div class="menu-flotante-body">
+          <a href="especie.pagina_url" class="menu-flotante-body__liga-vista-lista">
+
+            <div class="menu-flotante-body__data-container-vista-lista">
+              <h3 class="menu-flotante-body__liga__titulo-vista-lista">
+                <i>especie.nombre_cientifico</i> especie.indicador_subespecie <i>especie.subespecie</i>
+                especie.autor
+              </h3>
+              <h4 class="menu-flotante-body__liga__familia">especie.familia</h4>
+            </div>
+          </a>
+          <a href="especie.pagina_url" class="menu-flotante-body__liga-vista-lista">
+
+            <div class="menu-flotante-body__data-container-vista-lista">
+              <h3 class="menu-flotante-body__liga__titulo-vista-lista">
+                <i>especie.nombre_cientifico</i> especie.indicador_subespecie <i>especie.subespecie</i>
+                especie.autor
+              </h3>
+              <h4 class="menu-flotante-body__liga__familia">especie.familia</h4>
+            </div>
+          </a>
+          <a href="especie.pagina_url" class="menu-flotante-body__liga-vista-lista">
+
+            <div class="menu-flotante-body__data-container-vista-lista">
+              <h3 class="menu-flotante-body__liga__titulo-vista-lista">
+                <i>especie.nombre_cientifico</i> especie.indicador_subespecie <i>especie.subespecie</i>
+                especie.autor
+              </h3>
+              <h4 class="menu-flotante-body__liga__familia">especie.familia</h4>
+            </div>
+          </a>
+          <a href="especie.pagina_url" class="menu-flotante-body__liga-vista-lista">
+
+            <div class="menu-flotante-body__data-container-vista-lista">
+              <h3 class="menu-flotante-body__liga__titulo-vista-lista">
+                <i>especie.nombre_cientifico</i> especie.indicador_subespecie <i>especie.subespecie</i>
+                especie.autor
+              </h3>
+              <h4 class="menu-flotante-body__liga__familia">especie.familia</h4>
+            </div>
+          </a>
+          <a href="especie.pagina_url" class="menu-flotante-body__liga-vista-lista">
+
+            <div class="menu-flotante-body__data-container-vista-lista">
+              <h3 class="menu-flotante-body__liga__titulo-vista-lista">
+                <i>especie.nombre_cientifico</i> especie.indicador_subespecie <i>especie.subespecie</i>
+                especie.autor
+              </h3>
+              <h4 class="menu-flotante-body__liga__familia">especie.familia</h4>
+            </div>
+          </a>
+          <a href="especie.pagina_url" class="menu-flotante-body__liga-vista-lista">
+
+            <div class="menu-flotante-body__data-container-vista-lista">
+              <h3 class="menu-flotante-body__liga__titulo-vista-lista">
+                <i>especie.nombre_cientifico</i> especie.indicador_subespecie <i>especie.subespecie</i>
+                especie.autor
+              </h3>
+              <h4 class="menu-flotante-body__liga__familia">especie.familia</h4>
+            </div>
+          </a>
+          <a href="especie.pagina_url" class="menu-flotante-body__liga-vista-lista">
+
+            <div class="menu-flotante-body__data-container-vista-lista">
+              <h3 class="menu-flotante-body__liga__titulo-vista-lista">
+                <i>especie.nombre_cientifico</i> especie.indicador_subespecie <i>especie.subespecie</i>
+                especie.autor
+              </h3>
+              <h4 class="menu-flotante-body__liga__familia">especie.familia</h4>
+            </div>
+          </a>
+          <a href="especie.pagina_url" class="menu-flotante-body__liga-vista-lista">
+
+            <div class="menu-flotante-body__data-container-vista-lista">
+              <h3 class="menu-flotante-body__liga__titulo-vista-lista">
+                <i>especie.nombre_cientifico</i> especie.indicador_subespecie <i>especie.subespecie</i>
+                especie.autor
+              </h3>
+              <h4 class="menu-flotante-body__liga__familia">especie.familia</h4>
+            </div>
+          </a>
+          <a href="especie.pagina_url" class="menu-flotante-body__liga-vista-lista">
+
+            <div class="menu-flotante-body__data-container-vista-lista">
+              <h3 class="menu-flotante-body__liga__titulo-vista-lista">
+                <i>especie.nombre_cientifico</i> especie.indicador_subespecie <i>especie.subespecie</i>
+                especie.autor
+              </h3>
+              <h4 class="menu-flotante-body__liga__familia">especie.familia</h4>
+            </div>
+          </a>
+          <a href="especie.pagina_url" class="menu-flotante-body__liga-vista-lista">
+
+            <div class="menu-flotante-body__data-container-vista-lista">
+              <h3 class="menu-flotante-body__liga__titulo-vista-lista">
+                <i>especie.nombre_cientifico</i> especie.indicador_subespecie <i>especie.subespecie</i>
+                especie.autor
+              </h3>
+              <h4 class="menu-flotante-body__liga__familia">especie.familia</h4>
+            </div>
+          </a>
+          <a href="especie.pagina_url" class="menu-flotante-body__liga-vista-lista">
+
+            <div class="menu-flotante-body__data-container-vista-lista">
+              <h3 class="menu-flotante-body__liga__titulo-vista-lista">
+                <i>especie.nombre_cientifico</i> especie.indicador_subespecie <i>especie.subespecie</i>
+                especie.autor
+              </h3>
+              <h4 class="menu-flotante-body__liga__familia">especie.familia</h4>
+            </div>
+          </a>
+          <a href="especie.pagina_url" class="menu-flotante-body__liga-vista-lista">
+
+            <div class="menu-flotante-body__data-container-vista-lista">
+              <h3 class="menu-flotante-body__liga__titulo-vista-lista">
+                <i>especie.nombre_cientifico</i> especie.indicador_subespecie <i>especie.subespecie</i>
+                especie.autor
+              </h3>
+              <h4 class="menu-flotante-body__liga__familia">especie.familia</h4>
+            </div>
+          </a>
+          <a href="especie.pagina_url" class="menu-flotante-body__liga-vista-lista">
+
+            <div class="menu-flotante-body__data-container-vista-lista">
+              <h3 class="menu-flotante-body__liga__titulo-vista-lista">
+                <i>especie.nombre_cientifico</i> especie.indicador_subespecie <i>especie.subespecie</i>
+                especie.autor
+              </h3>
+              <h4 class="menu-flotante-body__liga__familia">especie.familia</h4>
+            </div>
+          </a>
+          <a href="especie.pagina_url" class="menu-flotante-body__liga-vista-lista">
+
+            <div class="menu-flotante-body__data-container-vista-lista">
+              <h3 class="menu-flotante-body__liga__titulo-vista-lista">
+                <i>especie.nombre_cientifico</i> especie.indicador_subespecie <i>especie.subespecie</i>
+                especie.autor
+              </h3>
+              <h4 class="menu-flotante-body__liga__familia">especie.familia</h4>
+            </div>
+          </a>
+          <a href="especie.pagina_url" class="menu-flotante-body__liga-vista-lista">
+
+            <div class="menu-flotante-body__data-container-vista-lista">
+              <h3 class="menu-flotante-body__liga__titulo-vista-lista">
+                <i>especie.nombre_cientifico</i> especie.indicador_subespecie <i>especie.subespecie</i>
+                especie.autor
+              </h3>
+              <h4 class="menu-flotante-body__liga__familia">especie.familia</h4>
+            </div>
+          </a>
+          <a href="especie.pagina_url" class="menu-flotante-body__liga-vista-lista">
+
+            <div class="menu-flotante-body__data-container-vista-lista">
+              <h3 class="menu-flotante-body__liga__titulo-vista-lista">
+                <i>especie.nombre_cientifico</i> especie.indicador_subespecie <i>especie.subespecie</i>
+                especie.autor
+              </h3>
+              <h4 class="menu-flotante-body__liga__familia">especie.familia</h4>
+            </div>
+          </a>
+          <a href="especie.pagina_url" class="menu-flotante-body__liga-vista-lista">
+
+            <div class="menu-flotante-body__data-container-vista-lista">
+              <h3 class="menu-flotante-body__liga__titulo-vista-lista">
+                <i>especie.nombre_cientifico</i> especie.indicador_subespecie <i>especie.subespecie</i>
+                especie.autor
+              </h3>
+              <h4 class="menu-flotante-body__liga__familia">especie.familia</h4>
+            </div>
+          </a>
+          <a href="especie.pagina_url" class="menu-flotante-body__liga-vista-lista">
+
+            <div class="menu-flotante-body__data-container-vista-lista">
+              <h3 class="menu-flotante-body__liga__titulo-vista-lista">
+                <i>especie.nombre_cientifico</i> especie.indicador_subespecie <i>especie.subespecie</i>
+                especie.autor
+              </h3>
+              <h4 class="menu-flotante-body__liga__familia">especie.familia</h4>
+            </div>
+          </a>
+          <a href="especie.pagina_url" class="menu-flotante-body__liga-vista-lista">
+
+            <div class="menu-flotante-body__data-container-vista-lista">
+              <h3 class="menu-flotante-body__liga__titulo-vista-lista">
+                <i>especie.nombre_cientifico</i> especie.indicador_subespecie <i>especie.subespecie</i>
+                especie.autor
+              </h3>
+              <h4 class="menu-flotante-body__liga__familia">especie.familia</h4>
+            </div>
+          </a>
+          <a href="especie.pagina_url" class="menu-flotante-body__liga-vista-lista">
+
+            <div class="menu-flotante-body__data-container-vista-lista">
+              <h3 class="menu-flotante-body__liga__titulo-vista-lista">
+                <i>especie.nombre_cientifico</i> especie.indicador_subespecie <i>especie.subespecie</i>
+                especie.autor
+              </h3>
+              <h4 class="menu-flotante-body__liga__familia">especie.familia</h4>
+            </div>
+          </a>
+          <a href="especie.pagina_url" class="menu-flotante-body__liga-vista-lista">
+
+            <div class="menu-flotante-body__data-container-vista-lista">
+              <h3 class="menu-flotante-body__liga__titulo-vista-lista">
+                <i>especie.nombre_cientifico</i> especie.indicador_subespecie <i>especie.subespecie</i>
+                especie.autor
+              </h3>
+              <h4 class="menu-flotante-body__liga__familia">especie.familia</h4>
+            </div>
+          </a>
+          <a href="especie.pagina_url" class="menu-flotante-body__liga-vista-lista">
+
+            <div class="menu-flotante-body__data-container-vista-lista">
+              <h3 class="menu-flotante-body__liga__titulo-vista-lista">
+                <i>especie.nombre_cientifico</i> especie.indicador_subespecie <i>especie.subespecie</i>
+                especie.autor
+              </h3>
+              <h4 class="menu-flotante-body__liga__familia">especie.familia</h4>
+            </div>
+          </a>
+          <a href="especie.pagina_url" class="menu-flotante-body__liga-vista-lista">
+
+            <div class="menu-flotante-body__data-container-vista-lista">
+              <h3 class="menu-flotante-body__liga__titulo-vista-lista">
+                <i>especie.nombre_cientifico</i> especie.indicador_subespecie <i>especie.subespecie</i>
+                especie.autor
+              </h3>
+              <h4 class="menu-flotante-body__liga__familia">especie.familia</h4>
+            </div>
+          </a>
+          <a href="especie.pagina_url" class="menu-flotante-body__liga-vista-lista">
+
+            <div class="menu-flotante-body__data-container-vista-lista">
+              <h3 class="menu-flotante-body__liga__titulo-vista-lista">
+                <i>especie.nombre_cientifico</i> especie.indicador_subespecie <i>especie.subespecie</i>
+                especie.autor
+              </h3>
+              <h4 class="menu-flotante-body__liga__familia">especie.familia</h4>
+            </div>
+          </a>
+          <a href="especie.pagina_url" class="menu-flotante-body__liga-vista-lista">
+
+            <div class="menu-flotante-body__data-container-vista-lista">
+              <h3 class="menu-flotante-body__liga__titulo-vista-lista">
+                <i>especie.nombre_cientifico</i> especie.indicador_subespecie <i>especie.subespecie</i>
+                especie.autor
+              </h3>
+              <h4 class="menu-flotante-body__liga__familia">especie.familia</h4>
+            </div>
+          </a>
+        </div>
+      </nav>
+      <div class="">
+        <button class="boton-menu-flotante" onclick="Abrir();">
+          <span class="material-icons-sharp"> view_list </span>
+        </button>
+        <span class="material-icons-sharp"> keyboard_arrow_right </span>
+      </div>
+    </aside>
+    <footer class="">
+
+    </footer>
+  </div>
+
+  <!-- ----------------------------------- -->
+  <!-- Pantilla pagina-interior -->
+  <script type="text/x-template" id="pagina-interior-template">
       <main class="contendor-textos ">
         <section class="main-columna-izquierda">
           <h3 class="nombre-especie-lengua-terminal">{{especie.nombre_mixteco}}</h3>
@@ -179,25 +392,26 @@
           </section>
       </main>
     </script>
-    <!-- INSTALACION DE VUE -->
-    <!-- Desarrollo -->
-    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-    <!-- INSTALACION AXIOS -->
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <!-- Produccion -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2"></script> -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.min.js"></script> -->
-    <!-- Cargando código aplicación -->
-    <script type="module" src="interior-vue.js"></script>
-    <!-- <script type="module" src="view-interior.js"></script> -->
-    <!-- funcion para animar y desplegar barra lateral -->
-    <script>
-      function Abrir() {
-        document.getElementById("sidebar-menu").style.left = "0";
-      }
-      function Cerrar() {
-        document.getElementById("sidebar-menu").style.left = "-39.5%";
-      }
-    </script>
-  </body>
+  <!-- INSTALACION DE VUE -->
+  <!-- Desarrollo -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <!-- INSTALACION AXIOS -->
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <!-- Produccion -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2"></script> -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.min.js"></script> -->
+  <!-- Cargando código aplicación -->
+  <script type="module" src="interior-vue.js"></script>
+  <!-- <script type="module" src="view-interior.js"></script> -->
+  <!-- funcion para animar y desplegar barra lateral -->
+  <script>
+    function Abrir() {
+      document.getElementById("sidebar-menu").style.left = "0";
+    }
+    function Cerrar() {
+      document.getElementById("sidebar-menu").style.left = "-39.5%";
+    }
+  </script>
+</body>
+
 </html>
