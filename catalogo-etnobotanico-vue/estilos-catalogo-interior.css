@@ -17,7 +17,7 @@ html {
 }
 .lengua-terminal-item.activo {
   background-color: var(--interface1);
-  transition: background-color 1s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
 }
 .lengua-terminal-item.activo:hover {
   cursor: not-allowed;
@@ -93,7 +93,7 @@ hr.divisor-lengua-terminal--traduccion {
 
 .menu-traduccion-item.activo {
   background-color: var(--negro);
-  transition: background-color 1s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
 }
 .menu-traduccion-item.activo:hover {
   cursor: not-allowed;
