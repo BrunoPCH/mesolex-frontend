@@ -111,7 +111,7 @@ p.texto-libro {
 .contenedor-menu-flotante {
   position: absolute;
   top: 0.5rem;
-  left: -39.5%;
+  left: -41.5%;
   transition: left 350ms ease-in-out;
   /* left: 0rem; */
   height: calc(72vh + 2rem + 1rem + 1px + 2rem + 3.25rem);
