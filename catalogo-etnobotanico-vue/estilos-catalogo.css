@@ -490,7 +490,7 @@ button.boton__icono__tipo_visualizacion-activo:hover {
 /*SCROLL BAR*/
 
 ::-webkit-scrollbar {
-  width: 12px;
+  width: 25px;
   height: 8px;
 }
 
@@ -505,12 +505,16 @@ button.boton__icono__tipo_visualizacion-activo:hover {
 ::-webkit-scrollbar-thumb {
   background: var(--interface4);
   border-radius: 2px;
+  background-clip: content-box;
+  border-left: 18px solid transparent;
 }
 
 /* Handle on hover */
 
 ::-webkit-scrollbar-thumb:hover {
   background: var(--interface1);
+  background-clip: content-box;
+  border-left: 16px solid transparent;
 }
 
 /* Tipografía */
