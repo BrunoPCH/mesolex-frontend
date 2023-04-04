@@ -157,7 +157,7 @@ p.texto-libro {
   flex-basis: calc(100% - 2rem);
   display: block;
   margin-bottom: 1.5rem;
-  margin-right: 2rem;
+  margin-right: 0.5rem;
 }
 .menu-flotante-body__liga-vista-lista {
   text-decoration: none;
