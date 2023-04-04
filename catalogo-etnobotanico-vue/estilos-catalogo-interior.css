@@ -138,7 +138,7 @@ p.texto-libro {
   transform: translateX(81%);
   transition: transform 200ms ease-in-out;
 } */
-
+/* TABLA DE CONTENIDO */
 .menu-flotante {
   flex-grow: 1;
   background: #fff;
@@ -146,4 +146,46 @@ p.texto-libro {
   box-shadow: 3px 6px 7px 1px rgba(0, 0, 0, 0.42);
   -webkit-box-shadow: 3px 6px 7px 1px rgba(0, 0, 0, 0.42);
   -moz-box-shadow: 3px 6px 7px 1px rgba(0, 0, 0, 0.42);
+  overflow-y: hidden;
+  display: block;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.menu-flotante-body {
+  overflow-y: scroll;
+  flex-basis: calc(100% - 2rem);
+  display: block;
+  margin-bottom: 1.5rem;
+  margin-right: 2rem;
+}
+.menu-flotante-body__liga-vista-lista {
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 1rem !important;
+}
+.menu-flotante-body__liga-vista-lista:visited {
+  color: var(--gris1);
+}
+.menu-flotante-body__liga-vista-lista:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--interface1);
+}
+.menu-flotante-body__liga__titulo-vista-lista {
+  font-size: 0.8rem;
+  line-height: normal;
+  font-weight: 400;
+  color: var(--interface1);
+  margin: 0 !important;
+}
+.menu-flotante-body__liga__familia {
+  margin: 0 0 0 0 !important;
+  font-size: 0.7rem;
+  line-height: normal;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: var(--gris1);
+}
+footer {
+  min-height: 2rem;
 }
