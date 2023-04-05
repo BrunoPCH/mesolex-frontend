@@ -32,58 +32,37 @@
     <header>
       <section class=" ">
         <nav class="menu-lengua-terminal">
-          <button 
-            type="button" 
-            class="lengua-terminal-item" 
-            name="mixteco" 
-            value="mixteco"
-            :disabled="isButtonActive('mixtec')"
-            :class="{ activo : isButtonActive('mixtec')}" 
-            @click="setLanguageText('mixtec')">
+          <button type="button" class="lengua-terminal-item" name="mixteco" value="mixteco"
+            :disabled="isButtonActive('mixtec')" :class="{ activo : isButtonActive('mixtec')}"
+            @click="setLanguageText('mixtec')" onclick="ordenNormalBotonesTraduccion()">
             Mixteco
           </button>
-          <button 
-            type="button" 
-            class="lengua-terminal-item" 
-            name="Náhuatl" 
-            value="Náhuatl"
-            :disabled="isButtonActive('nahuatl')"
-            :class="{ activo : isButtonActive('nahuatl')}" @click="setLanguageText('nahuatl')">
+          <button type="button" class="lengua-terminal-item" name="Náhuatl" value="Náhuatl"
+            :disabled="isButtonActive('nahuatl')" :class="{ activo : isButtonActive('nahuatl')}"
+            @click="setLanguageText('nahuatl')" onclick="ordenNormalBotonesTraduccion()">
             Náhuatl
           </button>
-          <button 
-            type="button" 
-            class="lengua-terminal-item" 
-            name="Totonaco" 
-            value="Totonaco"
-            :disabled="isButtonActive('totonac')"
-            :class="{ activo : isButtonActive('totonac')}" 
-            @click="setLanguageText('totonac')">
+          <button type="button" class="lengua-terminal-item" name="Totonaco" value="Totonaco"
+            :disabled="isButtonActive('totonac')" :class="{ activo : isButtonActive('totonac')}"
+            @click="setLanguageText('totonac')" onclick="ordenNormalBotonesTraduccion()">
             Totonaco
           </button>
           <!-- <button class="lengua-terminal-item" name="Triqui" value="Triqui" type="button">Triqui</button> -->
           <button type="button" class="lengua-terminal-item" name="Comentario" value="Comentario"
-            :class="{ activo : isButtonActive('comment')}" @click="setLanguageText('comment')">
+            :class="{ activo : isButtonActive('comment')}" @click="setLanguageText('comment')"
+            onclick="ordenInversoBotonesTraduccion()">
+            <!-- No se si onclick genere conflictos con @click= 
+            La funcion esta en un script hasta abajo que en realidad cambia el orden de los botones en el flexbox por medio de una propiedad del estilo-->
             Comentario
           </button>
-          <button 
-            class="lengua-terminal-item boton-iconos-lengua-terminal-item" 
-            name="Play"
-            value="Play"
-            :disabled="isButtonActive('comment')"
-            @click="playPause"
-            type="button">
+          <button class="lengua-terminal-item boton-iconos-lengua-terminal-item" name="Play" value="Play"
+            :disabled="isButtonActive('comment')" @click="playPause" type="button">
             <span class="material-icons-sharp iconos-lengua-terminal-item">
               {{ playing ? 'pause' : 'music_note' }}
             </span>
           </button>
-          <button 
-            class="lengua-terminal-item boton-iconos-lengua-terminal-item"
-            name="Rewind" 
-            value="Rewind"
-            :disabled="isButtonActive('comment')"
-            @click="resetAudio"
-            type="button">
+          <button class="lengua-terminal-item boton-iconos-lengua-terminal-item" name="Rewind" value="Rewind"
+            :disabled="isButtonActive('comment')" @click="resetAudio" type="button">
             <span class="material-icons-sharp iconos-lengua-terminal-item">replay</span>
           </button>
           <button class="lengua-terminal-item boton-iconos-lengua-terminal-item" name="Back" value="Back" type="button"
@@ -397,7 +376,8 @@
             </div>
             </article>
             <hr class="divisor-lengua-terminal--traduccion">
-            <div class="menu-traduccion" v-show="text !== 'comentario'">
+            <div class="menu-traduccion" id="menu-traduccion" > 
+              <!-- v-show="text !== 'comentario'"  lo quite de div class="menu-traduccion -->
               <button
               class="menu-traduccion-item"
               :class="{ activo: isButtonActive('spanish')}"
@@ -443,6 +423,15 @@
       document.getElementById("sidebar-menu").style.left = "-41.5%";
     }
   </script>
+  <script>
+    function ordenInversoBotonesTraduccion() {
+      document.getElementById("menu-traduccion").style.order = "-1";
+    }
+    function ordenNormalBotonesTraduccion() {
+      document.getElementById("menu-traduccion").style.order = "0";
+    }
+  </script>
+
 </body>
 
 </html>
