@@ -79,6 +79,9 @@ let paginaInteriorComponente = {
     },
     getAudioUrl() {
       return this.text === 'comentario' ? '' : this.especie[`audio${this.text}_url`];
+    },
+    getTopText() {
+      return this.especie[this.text === 'comentario' ? `comentario${this.translationLanguage}` : `texto${this.text}`]
     }
   },
 };
@@ -96,7 +99,8 @@ new Vue({
   data() {
     return {
       topPanelSelection: topPanelOptions.mixtec,
-      playing: false
+      playing: false,
+      visibleSideBar: false
       // bottomPanelSelection: bottomPanelOptions.SPANISH
     }
   },
@@ -106,6 +110,12 @@ new Vue({
       this.$refs.translatedText.stop();
       this.topPanelSelection = topPanelOptions[language];
       this.$refs.translatedText.setLanguageText("spanish");
+      if (language === "comment") {
+        this.$refs.translatedText.$refs.translationPanel.style.order = "-1";
+      }
+      else {
+        this.$refs.translatedText.$refs.translationPanel.style.order = "0";
+      }
     },
     isButtonActive(buttonName) {
       return topPanelOptions[buttonName] === this.topPanelSelection;
@@ -116,6 +126,14 @@ new Vue({
     },
     resetAudio() {
       this.$refs.translatedText.resetAudio();
+    },
+    toggleSideBar() {
+      this.visibleSideBar = !this.visibleSideBar;
+      if (this.visibleSideBar) {
+        this.$refs.sidebarMenu.style.left = "0"
+      } else {
+        this.$refs.sidebarMenu.style.left = "-41.5%"
+      }
     }
   },
   computed: {

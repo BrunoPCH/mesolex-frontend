@@ -34,23 +34,27 @@
         <nav class="menu-lengua-terminal">
           <button type="button" class="lengua-terminal-item" name="mixteco" value="mixteco"
             :disabled="isButtonActive('mixtec')" :class="{ activo : isButtonActive('mixtec')}"
-            @click="setLanguageText('mixtec')" onclick="ordenNormalBotonesTraduccion()">
+            @click="setLanguageText('mixtec')">
             Mixteco
           </button>
           <button type="button" class="lengua-terminal-item" name="Náhuatl" value="Náhuatl"
             :disabled="isButtonActive('nahuatl')" :class="{ activo : isButtonActive('nahuatl')}"
-            @click="setLanguageText('nahuatl')" onclick="ordenNormalBotonesTraduccion()">
+            @click="setLanguageText('nahuatl')">
             Náhuatl
           </button>
           <button type="button" class="lengua-terminal-item" name="Totonaco" value="Totonaco"
             :disabled="isButtonActive('totonac')" :class="{ activo : isButtonActive('totonac')}"
-            @click="setLanguageText('totonac')" onclick="ordenNormalBotonesTraduccion()">
+            @click="setLanguageText('totonac')">
             Totonaco
           </button>
           <!-- <button class="lengua-terminal-item" name="Triqui" value="Triqui" type="button">Triqui</button> -->
-          <button type="button" class="lengua-terminal-item" name="Comentario" value="Comentario"
-            :class="{ activo : isButtonActive('comment')}" @click="setLanguageText('comment')"
-            onclick="ordenInversoBotonesTraduccion()">
+          <button 
+            type="button" 
+            class="lengua-terminal-item" 
+            name="Comentario" 
+            value="Comentario"
+            :class="{ activo : isButtonActive('comment')}" 
+            @click="setLanguageText('comment')">
             <!-- No se si onclick genere conflictos con @click= 
             La funcion esta en un script hasta abajo que en realidad cambia el orden de los botones en el flexbox por medio de una propiedad del estilo-->
             Comentario
@@ -81,10 +85,15 @@
         :text="topPanelSelection"></pagina-interior>
       <!-- 📃 Component -->
     </div>
-    <aside class="contenedor-menu-flotante abierto" id="sidebar-menu">
+    <aside 
+      class="contenedor-menu-flotante abierto" 
+      id="sidebar-menu"
+      ref="sidebarMenu"
+      >
       <nav class="menu-flotante" onclick="">
         <div class="menu-flotante-header">
-          <button onclick="Cerrar();">x</button>
+          <button 
+            @click="toggleSideBar">x</button>
           <h4>Contenido</h4>
         </div>
         <div class="menu-flotante-body">
@@ -341,8 +350,8 @@
         </div>
       </nav>
       <div class="">
-        <button class="boton-menu-flotante" onclick="Abrir();">
-          <span class="material-icons-sharp"> view_list </span>
+        <button class="boton-menu-flotante" @click="toggleSideBar">
+          <span class="material-icons-sharp"> {{ visibleSideBar ? 'close': 'view_list' }} </span>
         </button>
         <span class="material-icons-sharp"> keyboard_arrow_right </span>
       </div>
@@ -372,16 +381,18 @@
         <section class="main-columna-derecha">
           <article>
             <div class="contenedor-lengua-terminal">
-              <div v-html="especie[text === 'comentario' ? `comentario_esp` : `texto${text}`]"></div>
+              <div v-html="getTopText()"></div>
             </div>
             </article>
             <hr class="divisor-lengua-terminal--traduccion">
-            <div class="menu-traduccion" id="menu-traduccion" > 
-              <!-- v-show="text !== 'comentario'"  lo quite de div class="menu-traduccion -->
+            <div 
+              ref="translationPanel" 
+              class="menu-traduccion" 
+              id="menu-traduccion" > 
               <button
-              class="menu-traduccion-item"
-              :class="{ activo: isButtonActive('spanish')}"
-              @click="setLanguageText('spanish')"
+                class="menu-traduccion-item"
+                :class="{ activo: isButtonActive('spanish')}"
+                @click="setLanguageText('spanish')"
                 >
                 Español
               </button>
@@ -421,14 +432,6 @@
     }
     function Cerrar() {
       document.getElementById("sidebar-menu").style.left = "-41.5%";
-    }
-  </script>
-  <script>
-    function ordenInversoBotonesTraduccion() {
-      document.getElementById("menu-traduccion").style.order = "-1";
-    }
-    function ordenNormalBotonesTraduccion() {
-      document.getElementById("menu-traduccion").style.order = "0";
     }
   </script>
 
