@@ -76,8 +76,11 @@ let paginaInteriorComponente = {
     },
     stop() {
       this.playing = false;
+    },
+    getAudioUrl() {
+      return this.text === 'comentario' ? '' : this.especie[`audio${this.text}_url`];
     }
-  }
+  },
 };
 
 //2 registrando el componente en Vue
