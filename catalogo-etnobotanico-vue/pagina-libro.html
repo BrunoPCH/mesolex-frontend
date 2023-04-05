@@ -32,16 +32,33 @@
     <header>
       <section class=" ">
         <nav class="menu-lengua-terminal">
-          <button type="button" class="lengua-terminal-item" name="mixteco" value="mixteco"
-            :class="{ activo : isButtonActive('mixtec')}" @click="setLanguageText('mixtec')">
+          <button 
+            type="button" 
+            class="lengua-terminal-item" 
+            name="mixteco" 
+            value="mixteco"
+            :disabled="isButtonActive('mixtec')"
+            :class="{ activo : isButtonActive('mixtec')}" 
+            @click="setLanguageText('mixtec')">
             Mixteco
           </button>
-          <button type="button" class="lengua-terminal-item" name="Náhuatl" value="Náhuatl"
+          <button 
+            type="button" 
+            class="lengua-terminal-item" 
+            name="Náhuatl" 
+            value="Náhuatl"
+            :disabled="isButtonActive('nahuatl')"
             :class="{ activo : isButtonActive('nahuatl')}" @click="setLanguageText('nahuatl')">
             Náhuatl
           </button>
-          <button type="button" class="lengua-terminal-item" name="Totonaco" value="Totonaco"
-            :class="{ activo : isButtonActive('totonac')}" @click="setLanguageText('totonac')">
+          <button 
+            type="button" 
+            class="lengua-terminal-item" 
+            name="Totonaco" 
+            value="Totonaco"
+            :disabled="isButtonActive('totonac')"
+            :class="{ activo : isButtonActive('totonac')}" 
+            @click="setLanguageText('totonac')">
             Totonaco
           </button>
           <!-- <button class="lengua-terminal-item" name="Triqui" value="Triqui" type="button">Triqui</button> -->
@@ -53,6 +70,7 @@
             class="lengua-terminal-item boton-iconos-lengua-terminal-item" 
             name="Play"
             value="Play"
+            :disabled="isButtonActive('comment')"
             @click="playPause"
             type="button">
             <span class="material-icons-sharp iconos-lengua-terminal-item">
@@ -63,6 +81,7 @@
             class="lengua-terminal-item boton-iconos-lengua-terminal-item"
             name="Rewind" 
             value="Rewind"
+            :disabled="isButtonActive('comment')"
             @click="resetAudio"
             type="button">
             <span class="material-icons-sharp iconos-lengua-terminal-item">replay</span>
