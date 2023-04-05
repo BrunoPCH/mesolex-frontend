@@ -36,7 +36,9 @@ let paginaInteriorComponente = {
   data() {
     return {
       especie: {},
-      translationLanguage: bottomPanelOptions.spanish
+      translationLanguage: bottomPanelOptions.spanish,
+      playing: false,
+      audio: null
     };
   },
   // 4 Se crea HOOK
@@ -56,6 +58,21 @@ let paginaInteriorComponente = {
     },
     isButtonActive(buttonName) {
       return bottomPanelOptions[buttonName] === this.translationLanguage;
+    },
+    playPause() {
+      // Initializing audio variable
+      if (!this.audio) {
+        this.audio = this.$refs.audio;
+      }
+      if (this.playing) {
+        this.audio.pause();
+      } else {
+        this.audio.play();
+      }
+      this.playing = !this.playing;
+    },
+    resetAudio() {
+      this.audio.currentTime = 0;
     }
   }
 };
@@ -73,6 +90,7 @@ new Vue({
   data() {
     return {
       topPanelSelection: topPanelOptions.mixtec,
+      playing: false
       // bottomPanelSelection: bottomPanelOptions.SPANISH
     }
   },
@@ -83,11 +101,19 @@ new Vue({
     },
     isButtonActive(buttonName) {
       return topPanelOptions[buttonName] === this.topPanelSelection;
+    },
+    playPause() {
+      this.playing = !this.playing
+      this.$refs.translatedText.playPause();
+    },
+    resetAudio() {
+      this.$refs.translatedText.resetAudio();
     }
   },
   computed: {
-    activeButton() {
-      return {}
+    isCommentSelected() {
+      console.log(this.topPanelSelection === topPanelOptions.comment)
+      return this.topPanelSelection === topPanelOptions.comment
     }
   }
 });

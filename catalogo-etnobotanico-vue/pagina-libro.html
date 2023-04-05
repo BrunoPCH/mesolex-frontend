@@ -49,12 +49,23 @@
             :class="{ activo : isButtonActive('comment')}" @click="setLanguageText('comment')">
             Comentario
           </button>
-          <button class="lengua-terminal-item boton-iconos-lengua-terminal-item" name="Play" value="Play" type="button">
+          <button 
+            class="lengua-terminal-item boton-iconos-lengua-terminal-item" 
+            name="Play"
+            value="Play"
+            :disabled="isCommentSelected"
+            @click="playPause"
+            type="button">
             <span class="material-icons-sharp iconos-lengua-terminal-item">
-              music_note
+              {{ playing ? 'pause' : 'music_note' }}
             </span>
           </button>
-          <button class="lengua-terminal-item boton-iconos-lengua-terminal-item" name="Rewind" value="Rewind"
+          <button 
+            class="lengua-terminal-item boton-iconos-lengua-terminal-item"
+            name="Rewind" 
+            value="Rewind"
+            @click="resetAudio"
+            :disabled="isCommentSelected"
             type="button">
             <span class="material-icons-sharp iconos-lengua-terminal-item">replay</span>
           </button>
@@ -346,11 +357,13 @@
   </div>
 
   <!-- ----------------------------------- -->
-  <!-- Pantilla pagina-interior -->
+  <!-- 📃 Pantilla pagina-interior -->
   <script type="text/x-template" id="pagina-interior-template">
       <main class="contendor-textos ">
         <section class="main-columna-izquierda">
-          <h3 class="nombre-especie-lengua-terminal">{{especie[`nombre${text}`]}}</h3>
+          <section style="min-height: 4%;">
+            <h3 class="nombre-especie-lengua-terminal">{{especie[`nombre${text}`]}}</h3>
+          </section>
           <h1 class="nombre-cientifico"><i>{{especie.nombre_cientifico}}</i>
           {{especie.indicador_subespecie}} <i>{{especie.subespecie}}</i> {{especie.autor}}</h1>
           <h2 class="familia">{{especie.familia}}</h2>
@@ -389,6 +402,7 @@
                 </div>
               </div>
             </article>
+            <audio ref="audio" :src="especie[`audio${text}_url`]">Download audio</audio>
           </section>
       </main>
     </script>
