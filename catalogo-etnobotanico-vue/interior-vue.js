@@ -96,6 +96,7 @@ new Vue({
   },
   methods: {
     setLanguageText(language) {
+      this.playPause();
       this.topPanelSelection = topPanelOptions[language];
       this.$refs.translatedText.setLanguageText("spanish");
     },
