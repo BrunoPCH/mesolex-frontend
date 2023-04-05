@@ -73,6 +73,9 @@ let paginaInteriorComponente = {
     },
     resetAudio() {
       this.audio.currentTime = 0;
+    },
+    stop() {
+      this.playing = false;
     }
   }
 };
@@ -96,7 +99,8 @@ new Vue({
   },
   methods: {
     setLanguageText(language) {
-      this.playPause();
+      this.playing = false;
+      this.$refs.translatedText.stop();
       this.topPanelSelection = topPanelOptions[language];
       this.$refs.translatedText.setLanguageText("spanish");
     },
