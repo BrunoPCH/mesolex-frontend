@@ -100,7 +100,8 @@ new Vue({
     return {
       topPanelSelection: topPanelOptions.mixtec,
       playing: false,
-      visibleSideBar: false
+      visibleSideBar: false,
+      especies
       // bottomPanelSelection: bottomPanelOptions.SPANISH
     }
   },
