@@ -161,7 +161,7 @@ p.texto-libro {
 }
 .menu-flotante-body__liga-vista-lista {
   text-decoration: none;
-  display: inline-block;
+  display: block;
   margin-bottom: 1rem !important;
 }
 .menu-flotante-body__liga-vista-lista:visited {
