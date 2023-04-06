@@ -23,10 +23,14 @@ html {
   cursor: not-allowed;
 }
 .boton-iconos-lengua-terminal-item {
-  width: 25px !important;
-  height: 25px !important;
+  width: 19px !important;
+  height: 19px !important;
   padding: 0;
 }
+.iconos-lengua-terminal-item {
+  font-size:18px !important ;
+}
+
 main.contendor-textos {
   display: flex;
   flex-flow: row nowrap;
@@ -111,7 +115,7 @@ p.texto-libro {
 .contenedor-menu-flotante {
   position: absolute;
   top: 0.5rem;
-  left: -41.5%;
+  left: -40%;
   transition: left 350ms ease-in-out;
   /* left: 0rem; */
   height: calc(72vh + 2rem + 1rem + 1px + 2rem + 3.25rem);

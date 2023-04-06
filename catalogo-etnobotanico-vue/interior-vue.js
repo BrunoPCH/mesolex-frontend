@@ -8,7 +8,7 @@ const topPanelOptions = {
   mixtec: "_mixteco",
   nahuatl: "_nahuatl",
   totonac: "_totonaco",
-  comment: "comentario"
+  comment: "comentario",
 };
 
 const bottomPanelOptions = {
@@ -29,8 +29,8 @@ let paginaInteriorComponente = {
     },
     text: {
       type: String,
-      default: topPanelOptions.mixtec
-    }
+      default: topPanelOptions.mixtec,
+    },
   },
   //1.3 se define data del componente
   data() {
@@ -38,7 +38,7 @@ let paginaInteriorComponente = {
       especie: {},
       translationLanguage: bottomPanelOptions.spanish,
       playing: false,
-      audio: null
+      audio: null,
     };
   },
   // 4 Se crea HOOK
@@ -54,7 +54,7 @@ let paginaInteriorComponente = {
   },
   methods: {
     setLanguageText(language) {
-      this.translationLanguage = bottomPanelOptions[language]
+      this.translationLanguage = bottomPanelOptions[language];
     },
     isButtonActive(buttonName) {
       return bottomPanelOptions[buttonName] === this.translationLanguage;
@@ -78,11 +78,17 @@ let paginaInteriorComponente = {
       this.playing = false;
     },
     getAudioUrl() {
-      return this.text === 'comentario' ? '' : this.especie[`audio${this.text}_url`];
+      return this.text === "comentario"
+        ? ""
+        : this.especie[`audio${this.text}_url`];
     },
     getTopText() {
-      return this.especie[this.text === 'comentario' ? `comentario${this.translationLanguage}` : `texto${this.text}`]
-    }
+      return this.especie[
+        this.text === "comentario"
+          ? `comentario${this.translationLanguage}`
+          : `texto${this.text}`
+      ];
+    },
   },
 };
 
@@ -101,9 +107,9 @@ new Vue({
       topPanelSelection: topPanelOptions.mixtec,
       playing: false,
       visibleSideBar: false,
-      especies
+      especies,
       // bottomPanelSelection: bottomPanelOptions.SPANISH
-    }
+    };
   },
   methods: {
     setLanguageText(language) {
@@ -113,8 +119,7 @@ new Vue({
       this.$refs.translatedText.setLanguageText("spanish");
       if (language === "comment") {
         this.$refs.translatedText.$refs.translationPanel.style.order = "-1";
-      }
-      else {
+      } else {
         this.$refs.translatedText.$refs.translationPanel.style.order = "0";
       }
     },
@@ -122,7 +127,7 @@ new Vue({
       return topPanelOptions[buttonName] === this.topPanelSelection;
     },
     playPause() {
-      this.playing = !this.playing
+      this.playing = !this.playing;
       this.$refs.translatedText.playPause();
     },
     resetAudio() {
@@ -131,16 +136,16 @@ new Vue({
     toggleSideBar() {
       this.visibleSideBar = !this.visibleSideBar;
       if (this.visibleSideBar) {
-        this.$refs.sidebarMenu.style.left = "0"
+        this.$refs.sidebarMenu.style.left = "0";
       } else {
-        this.$refs.sidebarMenu.style.left = "-41.5%"
+        this.$refs.sidebarMenu.style.left = "-40%";
       }
-    }
+    },
   },
   computed: {
     isCommentSelected() {
-      console.log(this.topPanelSelection === topPanelOptions.comment)
-      return this.topPanelSelection === topPanelOptions.comment
-    }
-  }
+      console.log(this.topPanelSelection === topPanelOptions.comment);
+      return this.topPanelSelection === topPanelOptions.comment;
+    },
+  },
 });
