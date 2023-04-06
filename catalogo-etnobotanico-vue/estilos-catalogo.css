@@ -184,7 +184,7 @@ body {
 
 .header_home {
   width: 100%;
-  background-color: var(--interface1);
+  background-color: white;
   flex-grow: 3;
 }
 
@@ -528,15 +528,15 @@ h6 {
 }
 
 .header__titulo {
-  font-size: 3.8rem;
+  font-size: 2.8rem;
   font-weight: 600;
   display: block;
-  max-width: 576px;
+  /* max-width: 576px; */
   margin-block-start: 0.67rem;
   margin-block-end: 0.67rem;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
-  margin-left: 1rem;
+  margin-left: 0rem;
 }
 .main__contenedor_general__main {
   flex-basis: 50%;
