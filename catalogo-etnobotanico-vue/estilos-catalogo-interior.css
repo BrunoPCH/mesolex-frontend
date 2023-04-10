@@ -28,7 +28,7 @@ html {
   padding: 0;
 }
 .iconos-lengua-terminal-item {
-  font-size:15px;
+  font-size: 15px !important;
 }
 
 main.contendor-textos {
