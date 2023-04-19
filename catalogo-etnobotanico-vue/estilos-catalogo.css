@@ -181,8 +181,6 @@ body {
   align-items: stretch;
 }
 
-
-
 /*================================MAIN================================-*/
 
 .header_home {
@@ -221,7 +219,6 @@ footer {
   margin: 0px auto;
   padding: 0 1rem;
 }
-
 
 .contenedor-general-rebasado {
   /* min-height: 33rem; */
@@ -423,6 +420,9 @@ ol {
 }
 a:visited {
   color: currentColor;
+}
+cite {
+  font-style: italic;
 }
 /*>>>>>>>>>>>>>>>>>>>>>>>BOTONES<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
