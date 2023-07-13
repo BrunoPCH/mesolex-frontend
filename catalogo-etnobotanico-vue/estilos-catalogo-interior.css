@@ -60,6 +60,39 @@ main.contendor-textos {
   font-weight: 500;
   font-size: 1rem;
 }
+
+.imagenes {
+  font-size: 0;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+.imagenes a {
+  box-sizing: border-box;
+  border: 2px solid #f8f8f8;
+}
+.imagenes a img {
+  width: 100%;
+  height: auto;
+  flex-basis: 100%;
+}
+.imagenes a:nth-of-type(1) {
+  width: 100%;
+  height: auto;
+  flex-basis: 100%;
+}
+.imagenes a:nth-of-type(2) {
+  width: 50%;
+  height: auto;
+  flex-basis: 50%;
+}
+.imagenes a:nth-of-type(3) {
+  width: 50%;
+  height: auto;
+  flex-basis: 50%;
+}
+
 .main-columna-derecha {
   flex-basis: calc(60% - 1rem);
   /* height: calc(72vh + 2rem + 1rem + 1px + 2rem); */
