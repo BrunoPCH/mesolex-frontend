@@ -48,13 +48,8 @@
             Totonaco
           </button>
           <!-- <button class="lengua-terminal-item" name="Triqui" value="Triqui" type="button">Triqui</button> -->
-          <button 
-            type="button" 
-            class="lengua-terminal-item" 
-            name="Comentario" 
-            value="Comentario"
-            :class="{ activo : isButtonActive('comment')}" 
-            @click="setLanguageText('comment')">
+          <button type="button" class="lengua-terminal-item" name="Comentario" value="Comentario"
+            :class="{ activo : isButtonActive('comment')}" @click="setLanguageText('comment')">
             <!-- No se si onclick genere conflictos con @click= 
             La funcion esta en un script hasta abajo que en realidad cambia el orden de los botones en el flexbox por medio de una propiedad del estilo-->
             Comentario
@@ -85,19 +80,15 @@
         :text="topPanelSelection"></pagina-interior>
       <!-- 📃 Component -->
     </div>
-    <aside 
-      class="contenedor-menu-flotante abierto" 
-      id="sidebar-menu"
-      ref="sidebarMenu"
-      >
+    <aside class="contenedor-menu-flotante abierto" id="sidebar-menu" ref="sidebarMenu">
       <nav class="menu-flotante" onclick="">
         <div class="menu-flotante-header">
-          <button 
-            @click="toggleSideBar">x</button>
+          <button @click="toggleSideBar">x</button>
           <h4>Contenido</h4>
         </div>
         <div class="menu-flotante-body">
-          <a v-for="especie in especies" :key="nombre_cientifico" :href="especie.pagina_url" class="menu-flotante-body__liga-vista-lista">
+          <a v-for="especie in especies" :key="nombre_cientifico" :href="especie.pagina_url"
+            class="menu-flotante-body__liga-vista-lista">
             <div class="menu-flotante-body__data-container-vista-lista">
               <h3 class="menu-flotante-body__liga__titulo-vista-lista">
                 <i>{{especie.nombre_cientifico}}</i> {{especie.indicador_subespecie}} <i>{{especie.subespecie}}</i>
@@ -132,10 +123,17 @@
           {{especie.indicador_subespecie}} <i>{{especie.subespecie}}</i> {{especie.autor}}</h1>
           <h2 class="familia">{{especie.familia}}</h2>
           <!-- :src="especie.imagen_principal_url" -->
-          <a :href="especie.imagen_principal_url" target="_blank">
-            <img class="" :src="especie.imagen_principal_url" alt="Imagen representativa de la especie" width="100%"
-              height="auto">
-          </a>
+          <section class="imagenes">
+            <a :href="especie.imagen.principal_url" target="_blank">
+              <img class="" :src="especie.imagen.principal_url" alt="Imagen representativa de la especie">
+            </a>
+            <a :href="especie.imagen.secundaria_url" target="_blank">
+              <img class="" :src="especie.imagen.secundaria_url" alt="Segunda imagen de la especie">
+            </a>
+            <a :href="especie.imagen.terciaria_url" target="_blank">
+              <img class="" :src="especie.imagen.terciaria_url" alt="Tercera imagen de la especie" >
+            </a>
+          </section>
         </section>
         <section class="main-columna-derecha">
           <article>
