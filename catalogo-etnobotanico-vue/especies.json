@@ -820,5 +820,58 @@
         ]
       }
     ]
+  },
+
+  {
+    "nombre_cientifico": "Introducción / introduction",
+    "titulo_sección": "introducción",
+    "Texto_principal": "<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam dolor accusantium consectetur aspernatur? Minus, delectus laboriosam consequatur reprehenderit et quisquam magnam nihil obcaecati facilis fugiat quas. Pariatur ex ad inventore.</p>",
+    "miniatura_img_url": "imagenes/miniaturas-index/Bosque-de-Metepec-Mixe.jpg",
+    "imagen": {
+      "miniatura_url": "imagenes/miniaturas-index/21757o_IMG_6341_ed-300nr_clc_thumb.jpg",
+      "principal_url": "imagenes/imagenes-principales/21757o_IMG_6341_ed-300nr_clc.jpg",
+      "secundaria_url": "imagenes/miniaturas-index/amaranthus_hybridus_20312o_IMG_5286_ed-cr-300nr_ash_thumb.jpg",
+      "terciaria_url": "imagenes/miniaturas-index/bursera_simaruba_74060o_IMG_2415_ed-cr-300nr_mgs_thumb.jpg",
+      "cuaternaria_url": ""
+    }
+  },
+  {
+    "nombre_cientifico": "Créditos / credits",
+    "miniatura_img_url": "imagenes/miniaturas-index/Bosque-de-Metepec-Mixe1.jpg",
+    "titulo_sección": "introducción",
+    "Texto_principal": "<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam dolor accusantium consectetur aspernatur? Minus, delectus laboriosam consequatur reprehenderit et quisquam magnam nihil obcaecati facilis fugiat quas. Pariatur ex ad inventore.</p>",
+    "imagen": {
+      "miniatura_url": "imagenes/miniaturas-index/21757o_IMG_6341_ed-300nr_clc_thumb.jpg",
+      "principal_url": "imagenes/imagenes-principales/21757o_IMG_6341_ed-300nr_clc.jpg",
+      "secundaria_url": "imagenes/miniaturas-index/amaranthus_hybridus_20312o_IMG_5286_ed-cr-300nr_ash_thumb.jpg",
+      "terciaria_url": "imagenes/miniaturas-index/bursera_simaruba_74060o_IMG_2415_ed-cr-300nr_mgs_thumb.jpg",
+      "cuaternaria_url": ""
+    }
+  },
+  {
+    "nombre_cientifico": "Manual",
+    "titulo_sección": "introducción",
+    "Texto_principal": "<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam dolor accusantium consectetur aspernatur? Minus, delectus laboriosam consequatur reprehenderit et quisquam magnam nihil obcaecati facilis fugiat quas. Pariatur ex ad inventore.</p>",
+    "miniatura_img_url": "imagenes/miniaturas-index/Bosque-de-Metepec-Mixe.jpg",
+    "imagen": {
+      "miniatura_url": "imagenes/miniaturas-index/21757o_IMG_6341_ed-300nr_clc_thumb.jpg",
+      "principal_url": "imagenes/imagenes-principales/21757o_IMG_6341_ed-300nr_clc.jpg",
+      "secundaria_url": "imagenes/miniaturas-index/amaranthus_hybridus_20312o_IMG_5286_ed-cr-300nr_ash_thumb.jpg",
+      "terciaria_url": "imagenes/miniaturas-index/bursera_simaruba_74060o_IMG_2415_ed-cr-300nr_mgs_thumb.jpg",
+      "cuaternaria_url": ""
+    }
+  },
+  {
+    "nombre_cientifico": "Indefinida / undefined",
+    "miniatura_img_url": "imagenes/miniaturas-index/Bosque-de-Metepec-Mixe1.jpg",
+    "titulo_sección": "introducción",
+    "Texto_principal": "<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam dolor accusantium consectetur aspernatur? Minus, delectus laboriosam consequatur reprehenderit et quisquam magnam nihil obcaecati facilis fugiat quas. Pariatur ex ad inventore.</p>",
+    "imagen": {
+      "miniatura_url": "imagenes/miniaturas-index/21757o_IMG_6341_ed-300nr_clc_thumb.jpg",
+      "principal_url": "imagenes/imagenes-principales/21757o_IMG_6341_ed-300nr_clc.jpg",
+      "secundaria_url": "imagenes/miniaturas-index/amaranthus_hybridus_20312o_IMG_5286_ed-cr-300nr_ash_thumb.jpg",
+      "terciaria_url": "imagenes/miniaturas-index/bursera_simaruba_74060o_IMG_2415_ed-cr-300nr_mgs_thumb.jpg",
+      "cuaternaria_url": ""
+    }
   }
 ]
