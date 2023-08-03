@@ -124,14 +124,14 @@
           <h2 class="familia">{{especie.familia}}</h2>
           <!-- :src="especie.imagen_principal_url" -->
           <section class="imagenes">
-            <a :href="especie.imagen.principal_url" target="_blank">
-              <img class="" :src="especie.imagen.principal_url" alt="Imagen representativa de la especie">
+            <a :href="especie.imagenes[0].principal.high_url" target="_blank">
+              <img class="" :src="especie.imagenes[0].principal.min_url" alt="Imagen representativa de la especie">
             </a>
-            <a :href="especie.imagen.secundaria_url" target="_blank">
-              <img class="" :src="especie.imagen.secundaria_url" alt="Segunda imagen de la especie">
+            <a :href="especie.imagenes[1].secundaria_url" target="_blank">
+              <img class="" :src="especie.imagenes[1].secundaria_url" alt="Segunda imagen de la especie">
             </a>
-            <a :href="especie.imagen.terciaria_url" target="_blank">
-              <img class="" :src="especie.imagen.terciaria_url" alt="Tercera imagen de la especie" >
+            <a :href="especie.imagenes.terciaria_url" target="_blank">
+              <img class="" :src="especie.imagenes[2].terciaria_url" alt="Tercera imagen de la especie" >
             </a>
           </section>
         </section>

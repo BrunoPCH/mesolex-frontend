@@ -17,10 +17,10 @@ new Vue({
     return {
       isGrid: true,
       especies: [
-        "Introducción / introduction",
-        "Créditos / credits",
+        "Introducción | introduction",
+        "Créditos | Credits",
         "Manual",
-        "Indefinida / undefined",
+        "Indefinida | undefined",
         "Sambucus nigra",
         "Amaranthus hybridus",
         "Amaranthus spinosus",
