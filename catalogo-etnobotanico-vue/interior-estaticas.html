@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Estilos generales -->
+    <link rel="stylesheet" href="estilos-catalogo.css">
+    <!-- Estilos de página interior -->
+    <link rel="stylesheet" href="estilos-catalogo-interior.css">
+    <!-- imagen destacada de sitio -->
+    <meta property="og:image" content="{{especie.miniatura_img_url}}">
+    <!-- Google Fonts -->
+    <!-- Fira sans y fira sans condensed -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+    <!-- Iconos de materialice por medio de googlefonts https://developers.google.com/fonts/docs/material_icons-->
+    <!-- Catálogo iconos de google: https://fonts.google.com/icons -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+        rel="stylesheet" />
+    <!--Especie de la página interior-->
+    <title>{{especie.nombre_cientifico}} | {{numero de página}}</title>
+</head>
+
+<body id="contenedor-vue">
+    <div class="contenedor-general">
+        <header>
+            <section class="">
+                <nav class="menu-lengua-terminal ">
+
+                    <button class="lengua-terminal-item boton-iconos-lengua-terminal-item" name="Back" value="Back"
+                        type="button" onclick="window.location='index.html'">
+                        <span class="material-icons-sharp iconos-lengua-terminal-item">
+                            arrow_back
+                        </span>
+                    </button>
+                    <!-- <span class="material-icons-sharp" id="icono-indicador-reproduccion">volume_up</span> -->
+
+                </nav>
+            </section>
+        </header>
+        <main class="contendor-textos">
+            <section class="main-columna-izquierda">
+
+                <section style="min-height: 4%;">
+                    <h3 class="nombre-especie-lengua-terminal"></h3>
+                </section>
+                <h1 class="nombre-cientifico">Título</h1>
+                <h2 class="familia"></h2>
+
+                <!-- :src="especie.imagen_principal_url" -->
+                <a href="imagenes-catalogo/01403o_IMG_9608_ed-300nr_jda.jpg" target="_blank">
+                    <img class="" src="imagenes-catalogo/01403o_IMG_9608_ed-300nr_jda.jpg"
+                        alt="Imagen representativa de la especie" width="100%" height="auto">
+                </a>
+            </section>
+            <section class="main-columna-derecha ">
+
+                <div class="menu-traduccion ">
+                    <button class="menu-traduccion-item activo">Español</button>
+                    <button class="menu-traduccion-item">English</button>
+                </div>
+                <article>
+
+                    <div class="contenedor-lengua-terminal">
+                        <p class="">
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam molestiae facere reiciendis
+                            tenetur
+                            dolore doloribus, minus mollitia sint officiis consectetur repellendus quod at, autem
+                            corporis
+                            dicta
+                            sed
+                            quidem doloremque. Accusantium?
+                            Vitae vel recusandae eligendi, est inventore voluptates necessitatibus laudantium tempore
+                            delectus
+                            enim,
+                            quo ut? Eveniet perferendis repellat reprehenderit reiciendis nobis, mollitia aliquid ipsam
+                            vel
+                            est
+                            ipsum atque quasi tempora voluptatibus.
+                            Adipisci dignissimos dolores porro explicabo corporis, minima exercitationem eaque provident
+                            nemo
+                            tempore obcaecati molestiae labore, consequatur quos laborum placeat odio illo! Velit
+                            voluptates
+                            molestiae nesciunt quia accusantium vel vitae itaque.
+                            Dignissimos sequi vero deleniti obcaecati molestias nemo. Fugit, consequatur. Debitis ullam
+                            quibusdam,
+                            soluta qui perferendis quidem facere harum molestias culpa nihil itaque quod officia
+                            laboriosam,
+                            enim,
+                            aliquid tenetur esse consequuntur.
+                            Consequatur architecto soluta sit dolore fugiat. Quo ullam magnam ex quisquam corporis
+                            optio,
+                            cumque
+                            eius esse unde facilis eligendi. Corrupti non nisi quasi ducimus incidunt eaque doloremque
+                            consectetur
+                            aspernatur et!aliquid tenetur esse consequuntur.
+                            Consequatur architecto soluta sit dolore fugiat. Quo ullam magnam ex quisquam corporis
+                            optio,
+                            cumque
+                            eius esse unde facilis eligendi. Corrupti non nisi quasi ducimus incidunt eaque doloremque
+                            consectetur
+                            aspernatur et!
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam molestiae facere reiciendis
+                            tenetur
+                            dolore doloribus, minus mollitia sint officiis consectetur repellendus quod at, autem
+                            corporis
+                            dicta
+                            sed
+                            quidem doloremque. Accusantium?
+                            Vitae vel recusandae eligendi, est inventore voluptates necessitatibus laudantium tempore
+                            delectus
+                            enim,
+                            quo ut? Eveniet perferendis repellat reprehenderit reiciendis nobis, mollitia aliquid ipsam
+                            vel
+                            est
+                            ipsum atque quasi tempora voluptatibus.
+                            Adipisci dignissimos dolores porro explicabo corporis, minima exercitationem eaque provident
+                            nemo
+                            tempore obcaecati molestiae labore, consequatur quos laborum placeat odio illo! Velit
+                            voluptates
+                            molestiae nesciunt quia accusantium vel vitae itaque.
+                            Dignissimos sequi vero deleniti obcaecati molestias nemo. Fugit, consequatur. Debitis ullam
+                            quibusdam,
+                            soluta qui perferendis quidem facere harum molestias culpa nihil itaque quod officia
+                            laboriosam,
+                            enim,
+                            aliquid tenetur esse consequuntur.
+                            Consequatur architecto soluta sit dolore fugiat. Quo ullam magnam ex quisquam corporis
+                            optio,
+                            cumque
+                            eius esse unde facilis eligendi. Corrupti non nisi quasi ducimus incidunt eaque doloremque
+                            consectetur
+                            aspernatur et!aliquid tenetur esse consequuntur.
+                            Consequatur architecto soluta sit dolore fugiat. Quo ullam magnam ex quisquam corporis
+                            optio,
+                            cumque
+                            eius esse unde facilis eligendi. Corrupti non nisi quasi ducimus incidunt eaque doloremque
+                            consectetur
+                            aspernatur et!
+                            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ullam molestiae facere reiciendis
+                            tenetur
+                            dolore doloribus, minus mollitia sint officiis consectetur repellendus quod at, autem
+                            corporis
+                            dicta
+                            sed
+                            quidem doloremque. Accusantium?
+                            Vitae vel recusandae eligendi, est inventore voluptates necessitatibus laudantium tempore
+                            delectus
+                            enim,
+                            quo ut? Eveniet perferendis repellat reprehenderit reiciendis nobis, mollitia aliquid ipsam
+                            vel
+                            est
+                            ipsum atque quasi tempora voluptatibus.
+                            Adipisci dignissimos dolores porro explicabo corporis, minima exercitationem eaque provident
+                            nemo
+                            tempore obcaecati molestiae labore, consequatur quos laborum placeat odio illo! Velit
+                            voluptates
+                            molestiae nesciunt quia accusantium vel vitae itaque.
+                            Dignissimos sequi vero deleniti obcaecati molestias nemo. Fugit, consequatur. Debitis ullam
+                            quibusdam,
+                            soluta qui perferendis quidem facere harum molestias culpa nihil itaque quod officia
+                            laboriosam,
+                            enim,
+                            aliquid tenetur esse consequuntur.
+                            Consequatur architecto soluta sit dolore fugiat. Quo ullam magnam ex quisquam corporis
+                            optio,
+                            cumque
+                            eius esse unde facilis eligendi. Corrupti non nisi quasi ducimus incidunt eaque doloremque
+                            consectetur
+                            aspernatur et!aliquid tenetur esse consequuntur.
+                            Consequatur architecto soluta sit dolore fugiat. Quo ullam magnam ex quisquam corporis
+                            optio,
+                            cumque
+                            eius esse unde facilis eligendi. Corrupti non nisi quasi ducimus incidunt eaque doloremque
+                            consectetur
+                            aspernatur et!
+                        </p>
+
+                    </div>
+                </article>
+                <hr class="divisor-lengua-terminal--traduccion">
+            </section>
+
+        </main>
+        <aside class="contenedor-menu-flotante abierto " id="sidebar-menu">
+            <nav class="menu-flotante " onclick="">
+                <div class="menu-flotante-header">
+                    <button onclick="Cerrar();">x</button>
+                    <h4>Contenido</h4>
+
+                </div>
+
+
+            </nav>
+            <div class="">
+                <button class="boton-menu-flotante" onclick="Abrir();">
+                    <span class="material-icons-sharp ">
+                        view_list
+                    </span>
+                </button>
+                <span class="material-icons-sharp ">
+                    keyboard_arrow_right
+                </span>
+            </div>
+        </aside>
+        <footer class=" ">
+
+        </footer>
+    </div>
+    </script>
+    <!-- INSTALACION DE VUE -->
+    <!-- Desarrollo -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <!-- INSTALACION AXIOS -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- Produccion -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.min.js"></script> -->
+    <!-- Cargando código aplicación -->
+    <script type="module" src="xxxx.js"></script>
+    <!-- funcion para animar y desplegar barra lateral -->
+    <script>
+        function Abrir() {
+            document.getElementById("sidebar-menu").style.left = "0";
+        }
+        function Cerrar() {
+            document.getElementById("sidebar-menu").style.left = "-39.5%";
+        }
+    </script>
+
+</body>
+
+</html>

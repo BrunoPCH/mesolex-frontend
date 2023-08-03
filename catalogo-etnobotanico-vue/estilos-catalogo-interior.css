@@ -2,7 +2,7 @@ html {
   background-color: #f8f8f8;
   height: 100vh;
 }
-.contenedor-general {
+.contenedor-general-interior {
   position: relative;
   overflow: hidden;
 }
