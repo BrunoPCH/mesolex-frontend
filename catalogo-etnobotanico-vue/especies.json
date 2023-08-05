@@ -742,20 +742,14 @@
     "autor": "(Kunth)\u00a0Dugand",
     "familia": "Malvaceae",
     "pagina_url": "pagina-libro.html",
-    "imagenes": [
-      {
-        "principal": {
-          "min_url": "imagenes/miniaturas-index/pseudobombax_ellipticum_thumb.jpg",
-          "high_url": "imagenes/imagenes-principales/pseudobombax_ellipticum_principal.jpg"
-        }
-      },
-      {
-        "secundaria_url": "imagenes/miniaturas-index/amaranthus_hybridus_20312o_IMG_5286_ed-cr-300nr_ash_thumb.jpg"
-      },
-      {
-        "terciaria_url": "imagenes/miniaturas-index/bursera_simaruba_74060o_IMG_2415_ed-cr-300nr_mgs_thumb.jpg"
-      }
-    ],
+    "imagen": {
+      "miniatura_url": "imagenes/miniaturas-index/pseudobombax_ellipticum_thumb.jpg",
+      "principal_url": "imagenes/imagenes-principales/pseudobombax_ellipticum_principal.jpg",
+      "secundaria_url": "imagenes/miniaturas-index/amaranthus_hybridus_20312o_IMG_5286_ed-cr-300nr_ash_thumb.jpg",
+      "terciaria_url": "imagenes/miniaturas-index/bursera_simaruba_74060o_IMG_2415_ed-cr-300nr_mgs_thumb.jpg",
+      "pie": "Credito. | Pie de imagenes."
+    },
+
     "comentario": {
       "ing": "<p class='texto-libro'><em>Pseudobombax ellipticum</em>, is found from central Mexico in the north to El Salvador in the south, generally at altitudes of 250 to 1250 meters and often in somewhat rocky soil. It is a small to medium-sized tree, usually 8 to 15 meters in height though occasionally growing up to 25 or 30 meters. Its flowers are striking and may appear rose-colored or white, the varying result of the color of its long, clustered stamens, a feature that has given rise to its most common English name 'shaving-brush tree'. The leaves are compound, arranged palmately and usually in groups of five. Notably, the flowers emerge in the early months of the year (January to March) during which time the tree is bare of leaves. As the petals and stamens fall to the ground the calyxes, of a dark coffee-color, with the pistils remain attached to the branches.</p> <p class='texto-libro'>The tree is fast growing and given that branches take root when inserted into the ground, <em>P. ellipticum</em> is often used in living fences. The wood itself is soft and thus not used in tools or construction, nor is it favored for firewood except to fire ceramics, which require wood that burns at a low temperature. The softness of the wood, however, and the lack of clear, continually running grain mean that it is easy to shape and not prone to splitting when dry. It is thus used in carving utensils and, at least in the Nahuatl-speaking villages of the Balsas River valley in central Guerrero, in making masks. But it is also not commonly found and thus not often used in commercialized mask-making that is a primary source of revenue in San Francisco Ozomatlán. In both the Balsas valley (Nahuatl) and the Pacific Coast (Mixtec) deer are known to be particularly fond of the fallen flowers and hunters will often stalk out the area around these trees waiting for the deer to appear.</p> <p class='texto-libro'>Given the prevalence of this tree in central and southern Mexico, its distinct often swollen appearance, and its eye-catching flowers, it is known to many Indigenous cultures that inhabit this region. The early 16th-century opus of Francisco Hernández on Nahuatl knowledge of flora and fauna mentions this as the <em>xīlōxōchitl</em> (literally, 'young ear of maize' tree), a name that is preserved in many (if not all) Nahuatl-speaking communities where it is known. In San Agustín Oapan (Balsas Valley) it is called <em>xī́lexōchitl</em> (from <em>xīlehxōchitl</em>). Among 16th-century Nahuatl speakers the related term <em>tlacōxīlōxōchitl</em> ('rod-<em>xīlōxōchitl</em>') most likely was used to refers to <em>Calliandria</em> spp. a     legume genus with similar prominently stammened flowers. </p> <p class='texto-libro'>In Yoloxóchitl (Mixtec) this species is known as <em>tun⁴ ndu¹ka⁴ta⁴</em> (often pronounced tun⁴ ndwa¹⁴ta⁴). This term is probably derived from <em>ndu¹u⁴ ka⁴ta⁴</em> (‘fruit provokes.itchiness’) perhaps based on the irritation that this tree allegedly provokes. In Zongozotla (Totonaco) P. ellipticum is known as <em>tampo:q'o</em> (<i>tan</i>-, ‘bottom.parts’ + <i>po:q’o</i>, ‘round, spherical’), a name that apparently makes reference to the flower’s receptacles into which the petals are inserted. </p> <p class='texto-libro'>The tree is also documented in many Indigenous languages of Mexico: e.g. <em>mokok</em> (Tēnek, of unclear etymology) and <i>mail te'</i> (Tzotzil, 'watermelon squash tree'). The most extensive commentary on medicinal uses of this plant is found in Janis Alcorn, <cite>Huastec Mayan Ethnobotany</cite> (1984).</p>",
       "esp": "<p class='texto-libro'> <em>Pseudobombax ellipticum</em> se encuentra desde el centro de México en el norte hasta El Salvador en el sur, generalmente entre los 250 y 1250 metros de altitud y a menudo en suelos rocosos. Su tamaño varía de pequeño a mediano. Por lo común crece de 8 a 15 metros de alto aunque en ocasiones llega hasta los 25 o 30 metros. Sus flores son muy llamativas y pueden ser de color rosa o blanco, el resultado de estos colores es por sus largos y abundantes estambres agrupados densamente al centro de la flor. El tamaño y densidad de sus estambres es la característica que motiva su nombre popular en inglés: ‘shaving-brush tree’ (literalmente, ‘árbol de brocha de afeitar’). Las hojas son compuestas, arregladas en forma palmada, generalmente en grupos de cinco foliolos. Es de notar que las flores salen en los primeros meses del año (enero a marzo) cuando el árbol está desprovisto de hojas. Al caerse los pétalos y los estambres, los cálices, de color café oscuro, con los pistilos quedan pegados a las ramas del árbol.</p> <p class='texto-libro'> El árbol crece rápido. Dado que sus ramas echan raíces luego de ser enterradas en el suelo, <em>P. ellipticum </em> se emplea para cercas vivas. Por su parte, la madera es blanda y por eso no se emplea ni en herramientas ni en construcción de casas. También por ser blanda se quema a bajas temperaturas y no sirve como leña excepto para la cocción de la cerámica, que requiere un fuego no muy fuerte. Sin embargo, por ser blanda y no tener vetas marcadas ni contínuas, la madera es fácil de trabajar. La ausencia de vetas paralelas evita que la madera se agriete al secarse, por eso, es una madera preferida para fabricar utensilios y, por lo menos en los pueblos nahuas de la cuenca del Balsas en el centro de Guerrero, para tallar máscaras. Pero en esta región es poco común y por eso no es utilizado para las máscaras comercializadas, fabricadas en grandes cantidades en San Francisco Ozomatlán. Tanto en la cuenca del Balsas (náhuatl) como en la costa del Pacífico (mixteco) la gente sabe que las flores caídas son codiciadas por los venados, por ello los cazadores a menudo acechan a este animal cerca de árboles de <em>Pseudobombax ellipticum.</em> </p> <p class='texto-libro'>La forma distintiva de crecer y sus flores vistosas hacen de este árbol un elemento muy reconocido en las culturas indígenas del centro y sur de México. El estudio enciclopédico de Francisco Hernández en el siglo XVI acerca de la historia natural de los aztecas, menciona que este árbol es conocido como <em>xīlōxōchitl</em> (literalmente, 'jilote flor’), un nombre que sigue vigente en muchas, si no es que en todas las comunidades náhuas donde se conoce. En San Agustín Oapan (náhuatl) se llama <em>xī́lexōchitl</em> (de <em>xīlehxōchitl</em>). El término relacionado <em>tlacōxīlōxōchitl</em> ('vara-<em>xīlōxōchitl</em>') probablemente se usaba para especies de <em>Calliandria</em>, leguminosa también con flores de abundantes estambres largos. <p class='texto-libro'> En Yoloxóchitl (mixteco) se llama <em>tun⁴ ndu¹ka⁴ta⁴</em> (a menudo pronunciado como <em>tun⁴ ndwa¹⁴ta⁴</em>). Probablemente proviene de <em>ndu¹u⁴ ka⁴ta⁴</em> (‘fruto provoca.comezón’) quizá por la comezón que supuestamente provoca la savia de este árbol. En Zongozotla (totonaco) se conoce como <em>támpo:qo'</em> (<i>tan-</i>, ‘parte.posterior’ + <i>po:qo’</i>, ‘redondo, boludo, esférico’), un nombre que aparentamente hace referencia al receptáculo en que están insertado los pétalos.</p> <p class='texto-libro'>Finalmente, este árbol también está documentado en muchas lenguas indígenas de México, por ejemplo <em>mokok</em> (Tēnek, de etimología no clara) y <em>mail te'</em> (Tzotzil, 'sandía calabaza árbol’). Un comentario extenso de los usos medicinales de <em>Pseudobombax ellipticum</em> se presenta en Janis Alcorn, <cite>Huastec Mayan Ethnobotany</cite> (1984).</p>"
@@ -840,7 +834,7 @@
       "ing": "<p><strong>INGLES</strong> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam dolor accusantium consectetur aspernatur? Minus, delectus laboriosam consequatur reprehenderit et quisquam magnam nihil obcaecati facilis fugiat quas. Pariatur ex ad inventore.</p>",
       "esp": "<p><strong>ESPAÑOL</strong> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam dolor accusantium consectetur aspernatur? Minus, delectus laboriosam consequatur reprehenderit et quisquam magnam nihil obcaecati facilis fugiat quas. Pariatur ex ad inventore.</p>"
     },
-    "miniatura_img_url": "imagenes/miniaturas-index/Bosque-de-Metepec-Mixe.jpg",
+    "miniatura_img_url": "imagenes/miniaturas-index/Bosque-de-Metepec-Mixe0_01.jpg",
     "pagina_url": "interior-estaticas.html",
     "imagen": {
       "miniatura_url": "imagenes/miniaturas-index/Bosque-de-Metepec-Mixe.jpg",
@@ -860,7 +854,7 @@
       "ing": "<p><strong>INGLES</strong> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam dolor accusantium consectetur aspernatur? Minus, delectus laboriosam consequatur reprehenderit et quisquam magnam nihil obcaecati facilis fugiat quas. Pariatur ex ad inventore.</p>",
       "esp": "<p><strong>ESPAÑOL</strong> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam dolor accusantium consectetur aspernatur? Minus, delectus laboriosam consequatur reprehenderit et quisquam magnam nihil obcaecati facilis fugiat quas. Pariatur ex ad inventore.</p>"
     },
-    "miniatura_img_url": "imagenes/miniaturas-index/Bosque-de-Metepec-Mixe1.jpg",
+    "miniatura_img_url": "imagenes/miniaturas-index/Bosque-de-Metepec-Mixe0_02.jpg",
     "pagina_url": "interior-estaticas.html",
     "imagen": {
       "miniatura_url": "imagenes/miniaturas-index/Bosque-de-Metepec-Mixe.jpg",
@@ -880,7 +874,7 @@
       "ing": "<p><strong>INGLES</strong> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam dolor accusantium consectetur aspernatur? Minus, delectus laboriosam consequatur reprehenderit et quisquam magnam nihil obcaecati facilis fugiat quas. Pariatur ex ad inventore.</p>",
       "esp": "<p><strong>ESPAÑOL</strong> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam dolor accusantium consectetur aspernatur? Minus, delectus laboriosam consequatur reprehenderit et quisquam magnam nihil obcaecati facilis fugiat quas. Pariatur ex ad inventore.</p>"
     },
-    "miniatura_img_url": "imagenes/miniaturas-index/Bosque-de-Metepec-Mixe.jpg",
+    "miniatura_img_url": "imagenes/miniaturas-index/Bosque-de-Metepec-Mixe0_03.jpg",
     "pagina_url": "interior-estaticas.html",
     "imagen": {
       "miniatura_url": "imagenes/miniaturas-index/Bosque-de-Metepec-Mixe.jpg",
@@ -897,7 +891,7 @@
     "miniatura_img_url": "",
     "pagina_url": "interior-estaticas.html",
     "imagen": {
-      "miniatura_url": "imagenes/miniaturas-index/21757o_IMG_6341_ed-300nr_clc_thumb.jpg",
+      "miniatura_url": "imagenes/miniaturas-index/Bosque-de-Metepec-Mixe0_04.jpg",
       "principal_url": "imagenes/imagenes-principales/21757o_IMG_6341_ed-300nr_clc.jpg",
       "secundaria_url": "imagenes/miniaturas-index/amaranthus_hybridus_20312o_IMG_5286_ed-cr-300nr_ash_thumb.jpg",
       "terciaria_url": "imagenes/miniaturas-index/bursera_simaruba_74060o_IMG_2415_ed-cr-300nr_mgs_thumb.jpg",
@@ -905,7 +899,7 @@
     }
   },
   {
-    "nombre_cientifico": "Indefinida | undefined",
+    "nombre_cientifico": "Acerca de nosotros | About us",
     "titulo": {
       "ing": "Indefinida",
       "esp": "Undefinida"
@@ -914,7 +908,7 @@
       "ing": "<p><strong>INGLES</strong> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam dolor accusantium consectetur aspernatur? Minus, delectus laboriosam consequatur reprehenderit et quisquam magnam nihil obcaecati facilis fugiat quas. Pariatur ex ad inventore.</p>",
       "esp": "<p><strong>ESPAÑOL</strong> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam dolor accusantium consectetur aspernatur? Minus, delectus laboriosam consequatur reprehenderit et quisquam magnam nihil obcaecati facilis fugiat quas. Pariatur ex ad inventore.</p>"
     },
-    "miniatura_img_url": "imagenes/miniaturas-index/Bosque-de-Metepec-Mixe.jpg",
+    "miniatura_img_url": "imagenes/miniaturas-index/Bosque-de-Metepec-Mixe0_04.jpg",
     "pagina_url": "interior-estaticas.html",
     "imagen": {
       "min_url": "imagenes/miniaturas-index/Bosque-de-Metepec-Mixe.jpg",

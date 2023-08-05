@@ -20,7 +20,7 @@ new Vue({
         "Introducción | introduction",
         "Créditos | Credits",
         "Manual",
-        "Indefinida | undefined",
+        "Acerca de nosotros | About us",
         "Sambucus nigra",
         "Amaranthus hybridus",
         "Amaranthus spinosus",

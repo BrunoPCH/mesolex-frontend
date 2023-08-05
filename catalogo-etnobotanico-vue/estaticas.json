@@ -1,0 +1,78 @@
+[
+  {
+    "titulo": {
+      "ing": "Introduction",
+      "esp": "Introducción"
+    },
+    "seccion_html": {
+      "ing": "<p><strong>INGLES</strong> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam dolor accusantium consectetur aspernatur? Minus, delectus laboriosam consequatur reprehenderit et quisquam magnam nihil obcaecati facilis fugiat quas. Pariatur ex ad inventore.</p>",
+      "esp": "<p><strong>ESPAÑOL</strong> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam dolor accusantium consectetur aspernatur? Minus, delectus laboriosam consequatur reprehenderit et quisquam magnam nihil obcaecati facilis fugiat quas. Pariatur ex ad inventore.</p>"
+    },
+    "pagina_url": "interior-estaticas.html",
+    "imagen": {
+      "miniatura_url": "imagenes/miniaturas-index/Bosque-de-Metepec-Mixe.jpg",
+      "principal_url_izq": "imagenes/imagenes-principales/21757o_IMG_6341_ed-300nr_clc.jpg",
+      "secundaria_url": "imagenes/miniaturas-index/amaranthus_hybridus_20312o_IMG_5286_ed-cr-300nr_ash_thumb.jpg",
+      "terciaria_url": "imagenes/miniaturas-index/bursera_simaruba_74060o_IMG_2415_ed-cr-300nr_mgs_thumb.jpg",
+      "cuaternaria_url": "",
+      "pie": "pie"
+    }
+  },
+  {
+    "titulo": {
+      "ing": "Credits",
+      "esp": "Créditos"
+    },
+    "seccion_html": {
+      "ing": "<p><strong>INGLES</strong> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam dolor accusantium consectetur aspernatur? Minus, delectus laboriosam consequatur reprehenderit et quisquam magnam nihil obcaecati facilis fugiat quas. Pariatur ex ad inventore.</p>",
+      "esp": "<p><strong>ESPAÑOL</strong> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam dolor accusantium consectetur aspernatur? Minus, delectus laboriosam consequatur reprehenderit et quisquam magnam nihil obcaecati facilis fugiat quas. Pariatur ex ad inventore.</p>"
+    },
+    "pagina_url": "interior-estaticas.html",
+    "imagen": {
+      "miniatura_url": "imagenes/miniaturas-index/Bosque-de-Metepec-Mixe1.jpg",
+      "principal_url_izq": "imagenes/imagenes-principales/21757o_IMG_6341_ed-300nr_clc.jpg",
+      "secundaria_url": "imagenes/miniaturas-index/amaranthus_hybridus_20312o_IMG_5286_ed-cr-300nr_ash_thumb.jpg",
+      "terciaria_url": "imagenes/miniaturas-index/bursera_simaruba_74060o_IMG_2415_ed-cr-300nr_mgs_thumb.jpg",
+      "cuaternaria_url": "",
+      "pie": "pie"
+    }
+  },
+  {
+    "titulo": {
+      "ing": "Manual",
+      "esp": "Manual"
+    },
+    "seccion_html": {
+      "ing": "<p><strong>INGLES</strong> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam dolor accusantium consectetur aspernatur? Minus, delectus laboriosam consequatur reprehenderit et quisquam magnam nihil obcaecati facilis fugiat quas. Pariatur ex ad inventore.</p>",
+      "esp": "<p><strong>ESPAÑOL</strong> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam dolor accusantium consectetur aspernatur? Minus, delectus laboriosam consequatur reprehenderit et quisquam magnam nihil obcaecati facilis fugiat quas. Pariatur ex ad inventore.</p>"
+    },
+    "pagina_url": "interior-estaticas.html",
+    "imagen": {
+      "miniatura_url": "imagenes/miniaturas-index/Bosque-de-Metepec-Mixe.jpg",
+      "principal_url_izq": "imagenes/imagenes-principales/21757o_IMG_6341_ed-300nr_clc.jpg",
+      "secundaria_url": "imagenes/miniaturas-index/amaranthus_hybridus_20312o_IMG_5286_ed-cr-300nr_ash_thumb.jpg",
+      "terciaria_url": "imagenes/miniaturas-index/bursera_simaruba_74060o_IMG_2415_ed-cr-300nr_mgs_thumb.jpg",
+      "cuaternaria_url": "",
+      "pie": "pie"
+    }
+  },
+  {
+    "titulo": {
+      "ing": "Indefinida",
+      "esp": "Undefinida"
+    },
+    "seccion_html": {
+      "ing": "<p><strong>INGLES</strong> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam dolor accusantium consectetur aspernatur? Minus, delectus laboriosam consequatur reprehenderit et quisquam magnam nihil obcaecati facilis fugiat quas. Pariatur ex ad inventore.</p>",
+      "esp": "<p><strong>ESPAÑOL</strong> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam dolor accusantium consectetur aspernatur? Minus, delectus laboriosam consequatur reprehenderit et quisquam magnam nihil obcaecati facilis fugiat quas. Pariatur ex ad inventore.</p>"
+    },
+    "pagina_url": "interior-estaticas.html",
+    "imagen": {
+      "miniatura_url": "imagenes/miniaturas-index/Bosque-de-Metepec-Mixe.jpg",
+      "principal_url_izq": "imagenes/imagenes-principales/21757o_IMG_6341_ed-300nr_clc.jpg",
+      "secundaria_url": "imagenes/miniaturas-index/amaranthus_hybridus_20312o_IMG_5286_ed-cr-300nr_ash_thumb.jpg",
+      "terciaria_url": "imagenes/miniaturas-index/bursera_simaruba_74060o_IMG_2415_ed-cr-300nr_mgs_thumb.jpg",
+      "cuaternaria_url": "",
+      "pie": "pie"
+    }
+  }
+]

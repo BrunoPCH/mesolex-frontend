@@ -36,6 +36,7 @@ main.contendor-textos {
   flex-flow: row nowrap;
   align-items: stretch;
   height: calc(72vh + 2rem + 1rem + 1px + 2rem);
+  max-height: 100%;
   column-gap: 2rem;
   width: 100%;
 }
@@ -91,6 +92,11 @@ main.contendor-textos {
   width: 50%;
   height: auto;
   flex-basis: 50%;
+}
+section.creditos {
+  overflow-y: scroll;
+  min-height: 2rem;
+  max-height: 4rem;
 }
 
 .main-columna-derecha {

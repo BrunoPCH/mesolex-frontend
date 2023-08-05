@@ -114,7 +114,7 @@
   <!-- ----------------------------------- -->
   <!-- 📃 Pantilla pagina-interior -->
   <script type="text/x-template" id="pagina-interior-template">
-      <main class="contendor-textos ">
+      <main class="contendor-textos">
         <section class="main-columna-izquierda">
           <section style="min-height: 4%;">
             <h3 class="nombre-especie-lengua-terminal">{{especie[`nombre${text}`]}}</h3>
@@ -124,16 +124,28 @@
           <h2 class="familia">{{especie.familia}}</h2>
           <!-- :src="especie.imagen_principal_url" -->
           <section class="imagenes">
-            <a :href="especie.imagenes[0].principal.high_url" target="_blank">
-              <img class="" :src="especie.imagenes[0].principal.min_url" alt="Imagen representativa de la especie">
+            <a :href="especie.imagen.principal_url" target="_blank">
+              <img class="" :src="especie.imagen.principal_url" alt="Imagen representativa de la especie">
             </a>
-            <a :href="especie.imagenes[1].secundaria_url" target="_blank">
-              <img class="" :src="especie.imagenes[1].secundaria_url" alt="Segunda imagen de la especie">
+            <a :href="especie.imagen.secundaria_url" target="_blank">
+              <img class="" :src="especie.imagen.secundaria_url" alt="Segunda imagen de la especie">
             </a>
-            <a :href="especie.imagenes.terciaria_url" target="_blank">
-              <img class="" :src="especie.imagenes[2].terciaria_url" alt="Tercera imagen de la especie" >
+            <a :href="especie.imagen.terciaria_url" target="_blank">
+              <img class="" :src="especie.imagen.terciaria_url" alt="Tercera imagen de la especie" >
             </a>
+            <p class="smallest">{{especie.imagen.pie}}</p>
           </section>
+          <!-- <section class="creditos e3">
+            <h5>Créditos | Credits</h5>
+            <p class="smallest">
+              <strong>{{especie.lenguas[0].creditos[0].nombre}}</strong> | 
+              {{especie.lenguas[0].creditos[0].cargo}}. son diferentes en cada lengua. <br> 
+              <strong>{{especie.lenguas[0].creditos[1].nombre}}</strong> | 
+              {{especie.lenguas[0].creditos[1].cargo}}. son diferentes en cada lengua. <br>
+              <strong>{{especie.lenguas[0].creditos[2].nombre}}</strong> | 
+              {{especie.lenguas[0].creditos[2].cargo}}. son diferentes en cada lengua.
+            </p>
+          </section> -->
         </section>
         <section class="main-columna-derecha">
           <article>

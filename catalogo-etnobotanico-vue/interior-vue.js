@@ -2,7 +2,6 @@
 
 // importando los assets
 import especies from "./especies.json" assert { type: "json" };
-
 // Auxiliary Variables
 const topPanelOptions = {
   mixtec: "_mixteco",
